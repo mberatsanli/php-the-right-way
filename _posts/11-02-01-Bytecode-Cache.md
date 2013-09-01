@@ -10,8 +10,12 @@ Eğer PHP değiştirilmemişse, bytecode her zaman aynıdır.  Bunun anlamı der
 
 Bytecode gereksiz derlemeleri önlemek için bellekte saklanacaktır ve oradan çağırılacaktır. Kurulumu ve ayarlamaları sadece dakikalar alırken uygulamanız önemli ölçüde hızlanacaktır. Kurmamanız için hiç bir neden yok. 
 
+[OPcache](http://php.net/manual/en/book.opcache.php)'de dahili olarak gelen bytecode cache vardır. 
+Ayrıca önceki versiyonlar içinde kullanılabilir.
+
 Popüler bytcode önbellek araçları:
 
+* [APC](http://php.net/manual/en/book.apc.php) (PHP 5.4 and earlier)
 * [APC](http://php.net/manual/tr/book.apc.php)
 * [XCache](http://xcache.lighttpd.net/)
 * [Zend Optimizer+](http://www.zend.com/products/server/) (part of Zend Server package)

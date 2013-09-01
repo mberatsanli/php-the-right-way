@@ -10,22 +10,22 @@ hızlıca erişmek için nesnel önbellekleme yazılımlarını kullanabilirsini
 azaltarak performansı artırabilirsiniz. 
 
 Birçok popüler Bytecode Cache çözümü özel verilerinizi önbelleklemenize izin verir, _so there's even more reason to take
-advantage of them._ APC, XCache, ve WinCache PHP verilerinizi önbelleklemek için bir arayüz (API) sunar. 
+advantage of them._ APCu, XCache, ve WinCache PHP verilerinizi önbelleklemek için bir arayüz (API) sunar. 
 
-En genel kullanılan nesnel önbellekleme sistemleri APC ve memcached'dır. APC mükkemmel bir seçimdir, belleğe erişmek
-için, basit bir arayüze sahiptir. Kolay kurulabilirdir ve kullanılabilirdir. APC'nin bir sınırılaması sunucuda yüklü 
+En genel kullanılan nesnel önbellekleme sistemleri APCu ve memcached'dır. APCu mükkemmel bir seçimdir, belleğe erişmek
+için, basit bir arayüze sahiptir. Kolay kurulabilirdir ve kullanılabilirdir. APCu'nin bir sınırılaması sunucuda yüklü 
 bulunmasıdır. Memcached ise ayrılmış bir servis olarak kurulur ve network üzerinden kullanılır, bunun anlamı br çok 
 farklı sistemden erişebileceğiniz merkezi bir süper hızlı veri depolama imkanı sağlamasıdır. 
 
-PHP (Fast-)CGI olarak sunucunuzda çalışıyorsa, her işlem kendi önbelleğini kullanacaktır. APC verileri işlemler 
+PHP (Fast-)CGI olarak sunucunuzda çalışıyorsa, her işlem kendi önbelleğini kullanacaktır. APCu verileri işlemler 
 arasında paylaşılmayacaktır. Bu durumda, memcached kullanmayı tercih edebilirsiniz, memcached PHP işleme sürecine 
 bağlı değildir. 
 
-Bir ağ yapılandırmasında APC memcached'dan erişim hızı açısından genellikle daha iyi performans gösterecektir, 
+Bir ağ yapılandırmasında APCu memcached'dan erişim hızı açısından genellikle daha iyi performans gösterecektir, 
 ama memcached daha hızlı ve daha fazla büyümek için uygun olacaktır. Eğer uygulamanızın ekstra özelliklerini veya 
-birden fazla sunucuda çalışmasını önemsemiyorsanız, memcached APC'den nesnel önbellekleme için daha iyi bir seçimdir.
+birden fazla sunucuda çalışmasını önemsemiyorsanız, memcached APCu'den nesnel önbellekleme için daha iyi bir seçimdir.
 
-APC örneği:
+APCu örneği:
 
 {% highlight php %}
 <?php
@@ -41,6 +41,7 @@ print_r($data);
 
 Nesnel önbellekleme sistenleri hakkında daha fazla bilgi:
 
+* [APCu](https://github.com/krakjoe/apcu)
 * [APC Fonksiyonları](http://php.net/manual/tr/ref.apc.php)
 * [Memcached](http://memcached.org/)
 * [Redis](http://redis.io/)
