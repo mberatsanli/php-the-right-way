@@ -24,7 +24,7 @@ Otomatikleştirmek isteyeceğiniz bazı işlemler:
 
 ### Otomasyon Araçlarını Hazırlamak
 
-Otomasyon araçları, yazılım deployment larının yaygın görevlerini idare eden betik koleksiyonu olarak tanımlanabilir.
+Otomasyon araçları, yazılım deployment'larının yaygın görevlerini idare eden betik koleksiyonu olarak tanımlanabilir.
 Build araçları yazılımınızın bir parçası değildir, sadece yazılımınızla dışarıdan çalışır.
 
 Bazıları PHP, bazıları farklı dillerde olmak üzere build otomasyonunda size yardımcı olabilecek bir çok açık kaynak 
@@ -32,8 +32,8 @@ araç bulunmaktadır. Eğer belirli bir iş için daha uygunlarsa PHP ile yazıl
 İşte bir kaç örnek:
 
 [Phing](http://www.phing.info/) PHP dünyasında otomatik deployment a başlamak için en kolay yoldur. Phing ile basit 
-bir XML dosyasından paketleme, deployment ve ya test işlemlerini kontrol edebilirsiniz. Phing ([Apache Ant](http://ant.apache.org/) 
-tabanlıdır) bir web apliasyonunu yüklemek ve ya güncellemek için genellikle ihtiyaç duyulabilecek geniş çaplı işlemleri
+bir XML dosyasından paketleme, deployment veya test işlemlerini kontrol edebilirsiniz. Phing ([Apache Ant](http://ant.apache.org/) 
+tabanlıdır) bir web uygulamasını yüklemek ve ya güncellemek için genellikle ihtiyaç duyulabilecek geniş çaplı işlemleri
 hizmetinize sunar ve PHP de yazılmış özel işlemler ile geliştirilebilir.
 
 [Capistrano](https://github.com/capistrano/capistrano/wiki) is a system for *intermediate-to-advanced programmers* to 
