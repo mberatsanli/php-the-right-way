@@ -6,31 +6,37 @@ anchor: programlama_yaklasimlari
 
 ## Programlama Yaklaşımları {#programlama_yaklasimlari_title}
 
-PHP çeşitli programlama tekniklerini destekleyen esnek ve dinamik bir dildir.
-Özellikle PHP 5.0 ile katı bir nesne tabanlı model eklenerek (2004), PHP 5.3 de "anonymous functions" ve "namespaces"
-(2009) ve PHP 5.4'de "traits" ekleyerek yıllar içerisinde önemli ölçüde gelişti.
+PHP çeşitli programlama tekniklerini destekleyen esnek ve dinamik bir dildir. 
+Özellikle PHP 5.0 ile katı bir nesne tabanlı model eklenmiş (2004), PHP 5.3 de
+"anonymous functions" ve "namespaces" (2009) desteği gelmiş ve PHP 5.4'de "traits"
+özelliği eklenerek yıllar içerisinde PHP, nesne tabanlı programlama konusunda 
+kendisini önemli ölçüde geliştirmiştir.
 
 ### Nesne Tabanlı (Nesneye Dayalı) Programlama
 
-PHP, nesne tabanlı programlamanın "class", "abstract class", "interfaces", "inheritance", "constructors", "cloning",
-"exception" ve daha fazlası bütün özelliklerini içermektedir
-
+PHP, nesne tabanlı programlamanın "class", "abstract class", "interfaces",
+"inheritance", "constructors", "cloning", "exception" özellikleri ve daha 
+fazlasını içermektedir.
 
 * [Nesne tabanlı programlama hakkında][oop]
 * [Trait'ler hakkında][traits]
 
 ### Fonksiyonel Programlama
 
-PHP, bir fonskiyonun bir değişkene atandığı "first-class" fonksiyonu, desteklemektedir. Kullanıcı tanımlı ve dahili
-fonksiyonların ikiside bir değişkene referans edilebilir ve dinamik olarak çağırılabilir. Fonksiyon bir diğer fonksiyona
-parametre olarak gönderilebilir (bu özellik "High-order functions olarak bilinir.") veya bir fonksiyondan geri döndürülebilirler.
+PHP, bir fonskiyonun bir değişkene atandığı "first-class" fonksiyonu
+desteklemektedir. Kullanıcı tanımlı ve dahili fonksiyonların ikiside bir 
+değişkene referans edilebilir ve dinamik olarak çağırılabilir. Fonksiyon bir 
+diğer fonksiyona parametre olarak gönderilebilir (bu özellik "High-order 
+functions olarak bilinir.") veya bir fonksiyondan geri döndürülebilir.
 
-Özyineleme (recursion), kendi kendini çağıran fonksiyon desteklenen bir özelliktir, ama bir çok PHP kodu iterasyona odaklanmaktadır.
+Özyineleme (recursion), kendi kendini çağıran fonksiyon desteklenen bir 
+özelliktir, ama bir çok PHP kodu iterasyona (iteration) odaklanmaktadır.
 
-Yeni anonymous fonksiyonları (closures için desteklenmektedir) PHP 5.3 ile gelmektedir. (2009)
+Yeni anonim fonksiyonlar (closures) PHP 5.3 ile gelmiştir. (2009)
 
-PHP 5.4 added the ability to bind closures to an object's scope and also improved support for callables such that they
-can be used interchangeably with anonymous functions in almost all cases.
+PHP 5.4, closurelerin bir nesnenin scope'u içine bindlenmesi özelliğini getirmiş, 
+ayrıca callable desteğini geliştirmiştir. Artık neredeyse callables ve closures 
+neredeyse tüm durumlarda değişmeli olarak kullanılabilmektedir.
 
 * [PHP'de Fonksiyonel Programlama hakkında](/php-the-right-way/pages/Functional-Programming.html)
 * ["Anonymous Functions" hakkında][anonymous-functions]
@@ -41,10 +47,13 @@ can be used interchangeably with anonymous functions in almost all cases.
 
 ### Meta Programlama
 
-PHP, Reflection API ve Sihirli Yöntemler (Magic Methods) gibi bazı meta programlama mekanizmalarını destekler.
-`__get()`, `__set()`, `__clone()`, `__toString()` ve `__invoke()` gibi Sihirli Yöntemler bulunmaktadır. Bunlar
-geliştiriciye sınıfların davranışlarını değiştirmelerine izin verirler. Ruby geliştiricileri genellikle
-PHP'de `method_missing`in eksik olduğunu söylerler, ancak bu `__call()` ve `__callStatic()` olarak mevcuttur.
+PHP, Reflection API ve Sihirli Yöntemler (Magic Methods) gibi bazı meta 
+programlama mekanizmalarını destekler. PHP'de `__get()`, `__set()`, 
+`__clone()`, `__toString()` ve `__invoke()` gibi Sihirli Yöntemler bulunmaktadır. 
+Bunlar geliştiriciye sınıfların davranışlarını değiştirmelerine izin verirler. 
+Ruby geliştiricileri genellikle PHP'de `method_missing`in (Çağırılan methodun 
+olmaması durumu) eksik olduğunu söylerler. Ancak PHP bunu `__call()` ve 
+`__callStatic()` Sihirli Yöntemlerini kullanarak desteklemektedir.
 
 * [Sihirli yöntemler hakkında][magic-methods]
 * [Reflection hakkında][reflection]

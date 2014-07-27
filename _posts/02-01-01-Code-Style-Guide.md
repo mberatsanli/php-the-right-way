@@ -5,11 +5,11 @@ anchor: kodlama_stili_rehberi
 
 # Kodlama Stili Rehberi {#kodlama_stili_rehberi_title}
 
-PHP topluluğu geniş ve çeşitlidir, sayısız kütüphane, framework ve bileşenlerden oluşur. Bunlardan birkaçını seçip herhangi bir projede kullanmak PHP geliştiricileri için doğaldır. PHP kodlarında genel bir stile uymak, farklı ve çeşitli kütüphaneleri kullanmak ve karşılaştırmak açısından geliştiriciler için önemlidir. PHP kodunun genel kod stiline olabildiğince uyması gerekiyor ki geliştiriciler kolaylıkla farklı kütüphaneleri karıştırıp eşleştirebilsinler.
+PHP topluluğu geniş ve çeşitlidir. Sayısız kütüphane, framework ve bileşenlerden oluşmaktadır. Bunlardan birkaçını seçip herhangi bir projede kullanmak PHP geliştiricilerinin sıklıkla kullandığı bir yöntemdir. PHP kodlarında genel bir stile uymak, farklı ve çeşitli kütüphaneleri sorunsuz kullanmak açısından son derece önemlidir. PHP kodunun genel kod stiline olabildiğince uyması, geliştiricilerin kolaylıkla farklı kütüphaneleri kullanabilmesine olanak tanır.
 
-[Framework Interop Group][fig] (daha önce 'PHP Standards Group' olarak bilinen) çeşitli kodlama standartları önerilerinde bulunmuş ve [PSR-0][psr0], [PSR-1][psr1] ve [PSR-2][psr2] olarak bilinen standartları kabul etmiştir. Kabul edilmiş olan bu standartlar Drupal, Zend, Symfony, CakePHP, phpBB, AWS SDK, FuelPHP ve Lithium gibi büyük projelerde kullanılmaya başlanmıştır. Bunları kendi projelerinizde kullanabilirsiniz veya kendi kodlama stilinizi ve standartlarınız ile devam edebilirsiniz.
+[Framework Interop Group][fig] (daha önce 'PHP Standartları Grubu' olarak bilinen) çeşitli kodlama standartları önerilerinde bulunmuş ve [PSR-0][psr0], [PSR-1][psr1] ve [PSR-2][psr2] gibi standartları kabul etmiştir. Kabul edilmiş olan bu standartlar Drupal, Zend, Symfony, CakePHP, phpBB, AWS SDK, FuelPHP, Laravel ve Lithium gibi birçok büyük projelerde kullanılmaya başlanmış ve desteklenmiştir. Bu standartları dilerseniz kendi projelerinizde kullanabilirsiniz veya kendi kodlama stiliniz ve standartlarınız ile devam edebilirsiniz.
 
-Diğer geliştiricilerin yazdığınız kodu daha kolay okuyup anlamaları ve üzerinden çalışabilmeleri için bu standartlardan bir veya daha fazlasına uygun kod yazmalısınız, bunlar PSR'nin standartları ya da PEAR veya Zend'in standartları olabilir. Üçüncü partiler tarafından hazırlanmış kodlarla çalışırken birçok bileşenden oluşan uygulamalar birbiri ile daha uyumlu olabilir.
+Diğer geliştiricilerin yazdığınız kodu daha kolay okuyup anlamaları ve üzerinden çalışabilmeleri için bu standartlardan bir veya daha fazlasına uygun kod yazmalısınız. Bunlar PSR'nin standartları ya da PEAR veya Zend'in standartları olabilir. Üçüncü partiler tarafından hazırlanmış kodlarla çalışırken birçok bileşenden oluşan uygulamalar birbiri ile daha uyumlu olabilir.
 
 * [PSR-0 hakkında][psr0]
 * [PSR-1 hakkında][psr1]
@@ -17,11 +17,9 @@ Diğer geliştiricilerin yazdığınız kodu daha kolay okuyup anlamaları ve ü
 * ["PEAR Coding Standards" hakkında][pear-cs]
 * ["Zend Coding Standards" hakkında][zend-cs]
 
-[PHP_CodeSniffer][phpcs] kullanarak yazdığınız kodları bu standartlardan herhangi birine karşı kodunuzu kontrol etmek için kullanabilirsiniz [Sublime Text 2][st-cs] gibi bir editör eklentisi ile gerçek zamanlı geribildirimler alabilirsiniz.
-Fabien Potencier tarafından hazırlanan [PHP Coding Standards Fixer][phpcsfixer] uygulamasını kullanarak kodlarınızın bu standartlara uygun olarak otomatik düzeltilmesini sağlayabilirsiniz.
+[PHP_CodeSniffer][phpcs] eklentisini kullanarak yazdığınız kodların bu standartlardan herhangi birine uyumlu olup olmadığını kontrol edebilirsiniz. [Sublime Text 2][st-cs] gibi bir editörde ise bu konuda gerçek zamanlı geribildirimler alabilirsiniz. Ayrıca, Fabien Potencier tarafından hazırlanan [PHP Coding Standards Fixer][phpcsfixer] uygulamasını kullanarak kodlarınızın bu standartlara uygun şekilde otomatik olarak düzeltilmesini sağlayabilirsiniz.
 
-İngilizce dili kod içinde bulunan değişken, sabit, fonksiyon, yordam gibi semboller ve yapılara ait isimlendirmelerde tercih edilir. Yorumlar için ise şu anda ve gelecekte kodlar üzerinde uğraşacak kişilerin anlayabileceği bir dil tercih edilebilir (Örneğin; proje ekibinde yabancı veya Türkçe bilmeyen bir eleman varsa Türkçe yerine İngilizce tercih etmeniz daha uygun olur).
-
+İngilizce, kod içinde bulunan değişken, sabit, fonksiyon, yordam gibi semboller ve yapılara ait isimlendirmelerde tercih edilmektedir. Yorumlar için ise şu anda ve gelecekte kodlar üzerinde uğraşacak kişilerin anlayabileceği bir dil tercih edilmelidir. Örneğin, proje ekibinde Türkçe bilmeyen bir eleman varsa, yorum satırlarını Türkçe yerine İngilizce yazmanız daha doğru olacaktır.
 
 [fig]: http://www.php-fig.org/
 [psr0]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md

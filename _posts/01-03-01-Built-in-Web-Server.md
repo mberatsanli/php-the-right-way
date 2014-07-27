@@ -6,6 +6,7 @@ anchor: dahili_web_sunucusu
 
 ## Dahili Web Sunucusu {#dahili_web_sunucusu_title}
 
+
 PHP kullanmaya herhangi bir web sunucusu kurmadan ve ayarlama yapmadan başlayabilirsiniz (PHP 5.4+ sürümü gereklidir). Dahili web sunucusunu başlatmak için aşağıdaki komutu, projenize ait dosyaların bulunduğu dizin içinde komut satırından çalıştırabilirsiniz:
 
     > php -S localhost:8000

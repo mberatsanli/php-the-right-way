@@ -6,13 +6,22 @@ anchor: isim_uzaylari_namespaces
 
 ## İsim Uzayları (Namespaces) {#isim_uzaylari_namespaces_title}
 
-Daha öncede bahsedildiği üzere, PHP topluluğu bir sürü geliştiriciden oluşmaktadır. Bu nedenle bazı durumlarda bir kaç farklı kütüphane aynı isimde kullanılmış olabilir. İki kütüphane aynı isim uzayında olduğunda çakışırlar ve bu da soruna neden olur.
+Daha öncede bahsedildiği üzere PHP topluluğu bir sürü geliştiriciden oluşmaktadır.
+Bu nedenle bazı durumlarda bir kaç farklı kütüphane aynı isimde kullanılmış
+olabilir. İki kütüphane aynı isim uzayında oldukları zaman çakışırlar ve bu da 
+fatal error gibi sorunlara veya exceptionlara neden olur.
 
-_İsim uzayları_ bu sorunu çözer. PHP referans kılavuzunda da açıklandığı gibi, isim uzayları işletim sistemlerindeki klasörler ile karşılaştırılabilir; aynı isimdeki iki dosya fakrlı dizinlerde bulunabilir. Aynı şekilde, aynı isimdeki iki sınıf farklı isim uzaylarında bulunabilir. Bu kadar basit.
+_İsim uzayları_ bu sorunu çözmektedir. PHP referans kılavuzunda da açıklandığı 
+gibi, isim uzayları işletim sistemlerindeki klasörler ile karşılaştırılabilir. 
+Aynı isimdeki iki dosya nasıl farklı klasörlerde bulunabilirsa, aynı şekilde 
+aynı isimdeki iki sınıf farklı İsim Uzayları altında aynı isimde bulunabilmektedir.
 
-Diğer geliştiricilerin geliştirdiği kütüphaneler ile çakışma korkusu olmadan geliştirme yapabilmeniz adına isim uzaylarını kullanmak sizin için iyi olabilir.
+Diğer geliştiricilerin geliştirdiği kütüphaneler ile çakışma korkusu yaşamadan
+geliştirme yapabilmeniz için isim uzaylarını kullanmak sizin yararınıza olacaktır.
 
-[PSR-0][psr0] isim uzayları konusuna değinilmiştir ve birbiri ile uyumlu (plug-and-play code) standart dosya, sınıf ve isim uzayı düzeni kurmayı amaçlamaktadır.
+[PSR-0][psr0] İsim Uzayları konusuna değinmiştir ve birbiri ile uyumlu 
+(tak-ve-kullan kod) standart dosyalar, sınıflar ve isim uzayları düzeni kurmayı
+amaçlamaktadır.
 
 * [İsim Uzayları hakkında][namespaces]
 * [PSR-0 hakkında][psr0]
