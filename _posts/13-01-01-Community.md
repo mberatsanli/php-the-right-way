@@ -1,6 +1,7 @@
 ---
 title: Topluluk
 isChild: false
+anchor: topluluk
 ---
 
 # Topluluk {#topluluk_title}
@@ -11,7 +12,7 @@ Büyük olduğu kadar farklı(çeşitlilik açısından) PHP toplulukları mevcu
 
 ## PHP Kullanıcı Grupları
 
-Büyük bir şehirde yaşıyorsanız, yakınlarınızda bir PHP kullanıcı grubu vardır. Resmin bir liste bulunmamasına rağmen [Google][google] veya [Meetup.com][meetup] üzeriden bu grupları arayabilirsiniz. Daha küçük bir şehirde yaşıyorsanız, yerel bir grup olmayabilir. Bu durumda siz bir tane başlatın. 
+Büyük bir şehirde yaşıyorsanız, yakınlarınızda bir PHP kullanıcı grubu vardır. Resmin bir liste bulunmamasına rağmen [Google][google] veya [Meetup.com][meetup] üzeriden bu grupları arayabilirsiniz. Daha küçük bir şehirde yaşıyorsanız, yerel bir grup olmayabilir. Bu durumda siz bir tane başlatın.
 
 [PHP Wiki'deki Kullanıcı Grupları Hakkında][php-wiki]
 
@@ -29,4 +30,4 @@ PHP toplulukları tarafından dünya üzerinde birçok ülkede bölgesel ve ulus
 [phpc-twitter]: https://twitter.com/phpc
 [php-programmers-gplus]: https://plus.google.com/u/0/communities/104245651975268426012
 [php-irc]: http://webchat.freenode.net/
-[php-so]: http://stackoverflow.com/questions/tagged/php 
+[php-so]: http://stackoverflow.com/questions/tagged/php

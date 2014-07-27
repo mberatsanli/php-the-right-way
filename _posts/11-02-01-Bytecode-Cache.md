@@ -1,16 +1,17 @@
 ---
 title: Bytecode Cache (Önbelleği)
 isChild: true
+anchor: bytecode_cache
 ---
 
 ## Bytecode Cache (Önbelleği) {#bytecode_cache_onbellegi_title}
 
-PHP dosyaları çalıştırıldığı zaman, kodlar ilk olarak bytecode'a (aynı zamanda opcode olarak bilinir) derlenir ve daha sonra bytecode çalıştırılır. 
+PHP dosyaları çalıştırıldığı zaman, kodlar ilk olarak bytecode'a (aynı zamanda opcode olarak bilinir) derlenir ve daha sonra bytecode çalıştırılır.
 Eğer PHP değiştirilmemişse, bytecode her zaman aynıdır.  Bunun anlamı derleme aşaması CPU kaynaklarını boşa zaman harcamak demektir.
 
-Bytecode gereksiz derlemeleri önlemek için bellekte saklanacaktır ve oradan çağırılacaktır. Kurulumu ve ayarlamaları sadece dakikalar alırken uygulamanız önemli ölçüde hızlanacaktır. Kurmamanız için hiç bir neden yok. 
+Bytecode gereksiz derlemeleri önlemek için bellekte saklanacaktır ve oradan çağırılacaktır. Kurulumu ve ayarlamaları sadece dakikalar alırken uygulamanız önemli ölçüde hızlanacaktır. Kurmamanız için hiç bir neden yok.
 
-[OPcache](http://php.net/manual/en/book.opcache.php)'de dahili olarak gelen bytecode cache vardır. 
+[OPcache](http://php.net/manual/en/book.opcache.php)'de dahili olarak gelen bytecode cache vardır.
 Ayrıca önceki versiyonlar içinde kullanılabilir.
 
 Popüler bytcode önbellek araçları:

@@ -1,6 +1,7 @@
 ---
 title: Standart PHP Kütüphanesi
 isChild: true
+anchor: standart_php_kutuphanesi
 ---
 
 ## Standart PHP Kütüphanesi {#standart_php_kutuphanesi_title}
@@ -9,4 +10,4 @@ Standart PHP Kütüphanesi (The Standard PHP Library (SPL)) PHP ile paketlenmiş
 
 * [SPL hakkında][spl]
 
-[spl]: http://php.net/manual/tr/book.spl.php 
+[spl]: http://php.net/manual/tr/book.spl.php

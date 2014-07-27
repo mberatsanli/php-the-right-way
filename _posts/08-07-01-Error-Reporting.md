@@ -1,12 +1,13 @@
 ---
 title: Hata Raporları
 isChild: true
+anchor: hata_raporlari
 ---
 
 ## Hata Raporları {#hata_raporlari_title}
 
-Hata logları uygulamanızdaki sorunları bulmak için yararlı olabilir, ama aynı zamanda dış dünyaya uygulama yapısı 
-hakkında bilgi gösterebilir. Bu gibi sorunlarda uygulamanızı korumak için geliştirme ve canlı ortamın farklı 
+Hata logları uygulamanızdaki sorunları bulmak için yararlı olabilir, ama aynı zamanda dış dünyaya uygulama yapısı
+hakkında bilgi gösterebilir. Bu gibi sorunlarda uygulamanızı korumak için geliştirme ve canlı ortamın farklı
 konfigüre edilmesi gerekebilir.
 
 ### Geliştirme
@@ -30,14 +31,14 @@ Geliştirme ortamında olası her hatayı görmek için aşağıdaki satırları
 
 ### Canlı Ortam
 
-Hataları canlı ortamda gizelemek için `php.ini` dosyasına aşağıdaki konfigürasyonları eklemelisiniz : 
+Hataları canlı ortamda gizelemek için `php.ini` dosyasına aşağıdaki konfigürasyonları eklemelisiniz :
 
     display_errors = Off
     display_startup_errors = Off
     error_reporting = E_ALL
     log_errors = On
 
-Canlı sistemde bu ayarlar ile, hatalar halen web server için saklanacaktır, ama kullanıcılara gösterilmeyecektir. Daha fazla bilgi 
+Canlı sistemde bu ayarlar ile, hatalar halen web server için saklanacaktır, ama kullanıcılara gösterilmeyecektir. Daha fazla bilgi
 için aşağıdaki linkleri kullanabilirsiniz :
 
 * [error_reporting](http://php.net/manual/errorfunc.configuration.php#ini.error-reporting)

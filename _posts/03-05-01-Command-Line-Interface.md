@@ -1,6 +1,7 @@
 ---
 title: Komut Satırı Arayüzü
 isChild: true
+anchor: komut_satiri_arayuzu
 ---
 
 ## Komut Satırı Arayüzü {#komut_satiri_arayuzu_title}
@@ -9,7 +10,7 @@ PHP web uygulamaları geliştirmek için oluşturuldu, ama komut satırı (CLI) 
 
 CLI PHP uygulamaları güvenli bir web arayüzü oluşturmadan direk olarak çalıştığı için güçlüdür. Sadece komut satırı uygulamanızı direk ana web anadizinine koymayınız!
 
-Aşağıdaki komutları komut satırında çalıştırmayı deneyiniz : 
+Aşağıdaki komutları komut satırında çalıştırmayı deneyiniz :
 
 {% highlight bash %}
 > php -i
@@ -35,7 +36,7 @@ PHP kodunuz çalıştığında argümanlar için iki özel değişken oluşturma
 
 `exit()` kodu kabuğun komutun hata ile sonuçlandığını düşünmemesi için sıfır olmayan bir değişken ile kullanılmalıdır. Genelde kullanılan exit  komutları [buradadır][exit-codes].
 
-Kodumuzu çalıştırmak için aşağıdaki satırları kullanabilirsiniz : 
+Kodumuzu çalıştırmak için aşağıdaki satırları kullanabilirsiniz :
 
 {% highlight bash %}
 > php merhaba.php

@@ -15,10 +15,10 @@ _PHP: The Right Way_ sitenizde tanıtmak için bir banner'ı vardır. Bu konuda 
 
 [See Banner Images](http://www.phptherightway.com/banners.html)
 
-## Nasıl Katkıda Bulunabilirim 
+## Nasıl Katkıda Bulunabilirim
 
 1. Fork edin ve düzenleyin.
-2. İsterseniz [Jekyll](https://github.com/mojombo/jekyll/) ile [Ruby](https://rvm.io/rvm/install/) üzerinden kendi bilgisayarınızda görüntüleyebilirsiniz. 
+2. İsterseniz [Jekyll](https://github.com/mojombo/jekyll/) ile [Ruby](https://rvm.io/rvm/install/) üzerinden kendi bilgisayarınızda görüntüleyebilirsiniz.
 3. Değerlendirilmesi için "Pull Request" isteği gönderin.
 
 ### Katılımcı Rehberi
@@ -42,20 +42,22 @@ _PHP: The Right Way_ sitenizde tanıtmak için bir banner'ı vardır. Bu konuda 
 * [Portuguese](http://br.phptherightway.com)
 * [Russian](http://getjump.github.io/ru-php-the-right-way)
 * [Spanish](http://es.phptherightway.com)
+* [Ukrainian](http://iflista.github.com/php-the-right-way)
 * [Bulgarian](http://bg.phptherightway.com)
 * [German](http://rwetzlmayr.github.io/php-the-right-way)
-* [Turkish](http://hkulekci.github.com/php-the-right-way)
+* [Turkish](http://hkulekci.github.io/php-the-right-way/)
+* [Slovenian](http://sl.phptherightway.com)
 
 ### Çeviri
 
-Eğer _PHP: The Right Way_'i çevirmek istiyorsanız, repo'yu fork edin ve kendi github hesabınızdan yayınlayın. Ana dökümandan çevirinize bağlantı vereceğiz. 
+Eğer _PHP: The Right Way_'i çevirmek istiyorsanız, repo'yu fork edin ve kendi github hesabınızdan yayınlayın. Ana dökümandan çevirinize bağlantı vereceğiz.
 
 Parçalanmaları ve okuyucu karışıklığını önlemek için lütfen birini seçin :
 
 1. Github sayfanıza bağlantı vermek `[username].github.com/php-the-right-way`
 2. Github sayfanıza subdomain ile bağlantı vermek (e.g. "ru.phptherightway.com")
 
-Eğer bir subdomain kullanıyorsanız `CNAME` dosyasına domain bilgilerinizi giriniz ve DNS kurulumu için bize başvurun. Subdomain kullanmıyorsanız, `CNAME` dosaysını tamamen silin aksi durumda kendi fork'unuz çalışmayacaktır. 
+Eğer bir subdomain kullanıyorsanız `CNAME` dosyasına domain bilgilerinizi giriniz ve DNS kurulumu için bize başvurun. Subdomain kullanmıyorsanız, `CNAME` dosaysını tamamen silin aksi durumda kendi fork'unuz çalışmayacaktır.
 
 Çeviriniz bittiğinde bize bildirmek için bir issue(konu) açın .
 

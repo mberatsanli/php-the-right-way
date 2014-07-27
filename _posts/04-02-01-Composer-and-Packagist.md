@@ -1,6 +1,7 @@
 ---
 title: Composer ve Packagist
 isChild: true
+anchor: composer_ve_packagist
 ---
 
 ## Composer ve Packagist {#composer_ve_packagist_title}
@@ -27,24 +28,24 @@ Composer'i elle kurmak biraz üst seviye bir tekniktir. Ancak geliştiricinin et
  - Sorunlu uzantılar yüklenmez.
  - Belirli `php.ini` ayarları ayarlanır. 
 
-Bu kurulum adımlarının hiçbiri olmadan yapılan elle kurulumda, sizin için bir değerinin olup olmadığına karar vermelisiniz. Aşağıdaki komutlar ile elle kuruluma başlayalım : 
+Bu kurulum adımlarının hiçbiri olmadan yapılan elle kurulumda, sizin için bir değerinin olup olmadığına karar vermelisiniz. Aşağıdaki komutlar ile elle kuruluma başlayalım :
 
     curl -s https://getcomposer.org/composer.phar -o $HOME/local/bin/composer
     chmod +x $HOME/local/bin/composer
 
-`$HOME/local/bin` dizini (ya da sizin seçeceğiniz bir dizin) sizin `$PATH` değişkeninizin içerisinde olmalı. Bu `composer` komutunu kullanılabilir yapacaktır. 
+`$HOME/local/bin` dizini (ya da sizin seçeceğiniz bir dizin) sizin `$PATH` değişkeninizin içerisinde olmalı. Bu `composer` komutunu kullanılabilir yapacaktır.
 
-Dökümantasyonda karşılaştığımız `php composer.phar install` komutunu aşağıdaki gibi kullanabilirsiniz : 
+Dökümantasyonda karşılaştığımız `php composer.phar install` komutunu aşağıdaki gibi kullanabilirsiniz :
 
     composer install
 
 ### Bağımlıklıkları Nasıl Tanımlar ve Kurarız
 
-Composer proje bağımlılığını `composer.json` isimli bir dosya ile sağlar. Bu dosyayı elle ya da Composer vasıtasıyla güncelleyebilirsiniz. `php composer.phar require` komutu projenize bağımlılığı ekler ve daha önce oluşturmamış iseniz `composer.json` dosyanızı oluşturur. Aşağıda bir örnek yapalım ve projemize [Twig][2]'i ekleyelim. Aşağıdaki komutu projenizin ana dizininde çalıştırın. 
+Composer proje bağımlılığını `composer.json` isimli bir dosya ile sağlar. Bu dosyayı elle ya da Composer vasıtasıyla güncelleyebilirsiniz. `php composer.phar require` komutu projenize bağımlılığı ekler ve daha önce oluşturmamış iseniz `composer.json` dosyanızı oluşturur. Aşağıda bir örnek yapalım ve projemize [Twig][2]'i ekleyelim. Aşağıdaki komutu projenizin ana dizininde çalıştırın.
 
 	php composer.phar require twig/twig:~1.8
 
-`php composer.phar init` komutu sana tam bir `composer.json` dosyası oluşturmak için rehber olabilir. Herhangi bir şekilde `composer.json` dosyanızı oluşturduktan sonra aşağıdaki komutu kullanarak Composer ile bağımlılıklarınızı `vendor/` dizini altına indirebilir ve yükleyebilirsiniz. 
+`php composer.phar init` komutu sana tam bir `composer.json` dosyası oluşturmak için rehber olabilir. Herhangi bir şekilde `composer.json` dosyanızı oluşturduktan sonra aşağıdaki komutu kullanarak Composer ile bağımlılıklarınızı `vendor/` dizini altına indirebilir ve yükleyebilirsiniz.
 
     php composer.phar install
 
@@ -72,5 +73,5 @@ The [Security Advisories Checker][3] is a web service and a command-line tool, b
 
 [1]: http://packagist.org/
 [2]: http://twig.sensiolabs.org
-[3]: https://security.sensiolabs.org/ 
+[3]: https://security.sensiolabs.org/
 [4]: http://getcomposer.org/doc/00-intro.md

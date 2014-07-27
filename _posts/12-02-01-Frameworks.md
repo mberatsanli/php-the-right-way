@@ -1,6 +1,7 @@
 ---
 title: Çatılar (Frameworks)
 isChild: true
+anchor: catilar_frameworks
 ---
 
 ## Çatılar (Frameworks) {#catilar_frameworks_title}

@@ -1,6 +1,7 @@
 ---
 title: Güncel ve Tutarlı Sürümü Kullanın (5.5)
 isChild: true
+anchor: guncel_ve_tutarli_surumunu_kullanin
 ---
 
 ## Güncel ve Tutarlı Sürümü Kullanın (5.5) {#guncel_ve_tutarli_surumu_kullanin_55_title}

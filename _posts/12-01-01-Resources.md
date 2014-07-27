@@ -1,5 +1,6 @@
 ---
 title: Kaynaklar
+anchor: kaynaklar
 ---
 # Kaynaklar {#kaynaklar_title}
 

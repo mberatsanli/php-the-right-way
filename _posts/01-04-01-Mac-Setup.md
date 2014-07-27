@@ -1,13 +1,14 @@
 ---
 title: Mac (OSX) Kurulumu
 isChild: true
+anchor: mac_kurulumu
 ---
 
 ## Mac (OSX) Kurulumu  {#mac_osx_kurulumu_title}
 
 OSX ile birlikte PHP zaten kurulu halde gelir fakat PHP sürümü güncel ve kararlı sürümden biraz eski olabilir. Lion PHP 5.3.6 ile geliyor. Mountain Lion ise 5.3.10 ile.
 
-OSX'de PHP'yi güncellemek için, bir dizi Mac [Paket Yöneticisi][mac-package-managers] ile paket edinebilirsiniz, [php-osx by Liip][php-osx-downloads] tavsiye edilir. 
+OSX'de PHP'yi güncellemek için, bir dizi Mac [Paket Yöneticisi][mac-package-managers] ile paket edinebilirsiniz, [php-osx by Liip][php-osx-downloads] tavsiye edilir.
 
 Diğer bir seçenek ise PHP'yi [kendinizin derlemesidir][mac-compile], Bu durumda ise Xcode ya da Apple's Mac Developer Center üzerinden ["Command Line Tools for Xcode"][apple-developer] aracının kurulu olduğuna emin olun.
 

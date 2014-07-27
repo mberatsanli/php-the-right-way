@@ -1,5 +1,6 @@
 ---
 title: Kodlama Stili Rehberi
+anchor: kodlama_stili_rehberi
 ---
 
 # Kodlama Stili Rehberi {#kodlama_stili_rehberi_title}
@@ -14,7 +15,7 @@ Diğer geliştiricilerin yazdığınız kodu daha kolay okuyup anlamaları ve ü
 * [PSR-1 hakkında][psr1]
 * [PSR-2 hakkında][psr2]
 * ["PEAR Coding Standards" hakkında][pear-cs]
-* ["Zend Coding Standards" hakkında][zend-cs] 
+* ["Zend Coding Standards" hakkında][zend-cs]
 
 [PHP_CodeSniffer][phpcs] kullanarak yazdığınız kodları bu standartlardan herhangi birine karşı kodunuzu kontrol etmek için kullanabilirsiniz [Sublime Text 2][st-cs] gibi bir editör eklentisi ile gerçek zamanlı geribildirimler alabilirsiniz.
 Fabien Potencier tarafından hazırlanan [PHP Coding Standards Fixer][phpcsfixer] uygulamasını kullanarak kodlarınızın bu standartlara uygun olarak otomatik düzeltilmesini sağlayabilirsiniz.
