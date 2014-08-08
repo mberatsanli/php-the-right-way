@@ -1,16 +1,13 @@
-auto: true
 safe: true
-server: true
-server_port: 4000
 baseurl: /
 url: http://localhost:4000
 
 pygments: true
-markdown: maruku
+markdown: kramdown
 permalink: date
 maruku:
-    use_tex:    false
-    use_divs:   false
+    use_tex: false
+    use_divs: false
     png_engine: blahtex
-    png_dir:    images/latex
-    png_url:    /images/latex
+    png_dir: images/latex
+    png_url: /images/latex

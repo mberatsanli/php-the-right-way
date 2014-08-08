@@ -5,18 +5,18 @@ title: Design Patterns
 
 # Design Patterns
 
-Sizin web uygulamanızı oluşturmanız için bir çok kod ve proje yapısı mevcuttur ve az ya da 
-çok düşünerek bu mimarileri kullanabilirsiniz. Ama genel desenleri kullanmak genellikle daha 
-iyi fikirdir, çünkü kodunuzun daha temiz olmasını ve diğer geliştiriciler tarafından daha 
-kolay anlaşılmasını sağlar. 
+Sizin web uygulamanızı oluşturmanız için bir çok kod ve proje yapısı mevcuttur ve az ya da
+çok düşünerek bu mimarileri kullanabilirsiniz. Ama genel desenleri kullanmak genellikle daha
+iyi fikirdir, çünkü kodunuzun daha temiz olmasını ve diğer geliştiriciler tarafından daha
+kolay anlaşılmasını sağlar.
 
 * [Architectural pattern on Wikipedia](https://en.wikipedia.org/wiki/Architectural_pattern)
 * [Software design pattern on Wikipedia](https://en.wikipedia.org/wiki/Software_design_pattern)
 
 ## Factory
 
-En çok kullanılan "design pattern"lerden birisi Factory Pattern'dir. Bu desende, bir sınıf 
-basitçe kullanmak istediğiniz nesneyi oluşturur. Aşağıda bir örnekle bu deseni açıklayalım: 
+En çok kullanılan "design pattern"lerden birisi Factory Pattern'dir. Bu desende, bir sınıf
+basitçe kullanmak istediğiniz nesneyi oluşturur. Aşağıda bir örnekle bu deseni açıklayalım:
 
 {% highlight php %}
 <?php
@@ -51,16 +51,16 @@ $veyron = AutomobileFactory::create('Bugatti', 'Veyron');
 print_r($veyron->get_make_and_model()); // outputs "Bugatti Veyron"
 {% endhighlight %}
 
-Bu kod bir Automobile nesnesini oluşturmak için bir factory kullanıyor. Kodunuzu 
-bu şekilde kullanmanızın iki muhtemel yararı vardır. Birincisi, ilerde Automobile 
-sınıfınızın ismini değiştirdiğinizde isim değişikliğini sadece Factory sınıfında 
-yapmanız yeterli olacaktir. İkincisi, karmaşık işler yapan obje oluşturduğunuzda 
-bütün işi factory sınıfında yapabilirsiniz, her seferinde işlemleri tekrarlamak 
-yerine sadece yeni bir instance oluşturmanız yeterli olacaktır. 
+Bu kod bir Automobile nesnesini oluşturmak için bir factory kullanıyor. Kodunuzu
+bu şekilde kullanmanızın iki muhtemel yararı vardır. Birincisi, ilerde Automobile
+sınıfınızın ismini değiştirdiğinizde isim değişikliğini sadece Factory sınıfında
+yapmanız yeterli olacaktir. İkincisi, karmaşık işler yapan obje oluşturduğunuzda
+bütün işi factory sınıfında yapabilirsiniz, her seferinde işlemleri tekrarlamak
+yerine sadece yeni bir instance oluşturmanız yeterli olacaktır.
 
-Factory desenini kullanmak her zaman gerekli değildir. Örnek kod gereksiz 
-karmaşıklık ekleyen çok basit bir factory örneğidir. Oldukça büyük ve karmaşık 
-projelerde factory kullanarak kendinizi bir çok sorundan koruyabilirsiniz.  
+Factory desenini kullanmak her zaman gerekli değildir. Örnek kod gereksiz
+karmaşıklık ekleyen çok basit bir factory örneğidir. Oldukça büyük ve karmaşık
+projelerde factory kullanarak kendinizi bir çok sorundan koruyabilirsiniz.
 
 * [Factory pattern on Wikipedia](https://en.wikipedia.org/wiki/Factory_pattern)
 
@@ -153,11 +153,11 @@ application, as the object using the shared or global resource requires no knowl
 
 ## Strategy
 
-With the strategy pattern you encapsulate specific families of algorithms allowing the client class responsible for 
+With the strategy pattern you encapsulate specific families of algorithms allowing the client class responsible for
 instantiating a particular algorithm to have no knowledge of the actual implementation.
 There are several variations on the strategy pattern, the simplest of which is outlined below:
 
-This first code snippet outlines a family of algorithms; you may want a serialized array, some JSON or maybe 
+This first code snippet outlines a family of algorithms; you may want a serialized array, some JSON or maybe
 just an array of data:
 {% highlight php %}
 <?php
@@ -192,7 +192,7 @@ class ArrayOutput implements OutputInterface
 }
 {% endhighlight %}
 
-By encapsulating the above algorithms you are making it nice and clear in your code that other developers can easily 
+By encapsulating the above algorithms you are making it nice and clear in your code that other developers can easily
 add new output types without affecting the client code.
 
 You will see how each concrete 'output' class implements an OutputInterface - this serves two purposes, primarily it
@@ -252,11 +252,12 @@ and gives you a central place to hook in code that should be run for every reque
 
 ## Model-View-Controller
 
-The model-view-controller (MVC) pattern and its relatives HMVC and MVVM let you break up code into logical objects that
+The model-view-controller (MVC) pattern and its relatives HMVC and MVVM lets you break up code into logical objects that
 serve very specific purposes. Models serve as a data access layer where data is fetched and returned in formats usable
-throughout your application. Controllers handle the request, process the data returned from models and load views to
-send in the response. And views are display templates (markup, xml, etc) that are sent in the response to the web
+throughout your application. Controllers handle the request, process the data returned from models and load views
+to send in the response. And views are display templates (markup, xml, etc) that are sent in the response to the web
 browser.
+
 
 MVC is the most common architectural pattern used in the popular [PHP frameworks](https://github.com/codeguy/php-the-right-way/wiki/Frameworks).
 

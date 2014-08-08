@@ -22,10 +22,11 @@ Birim test için diğer bir kullanım açıkkaynağa katkıda bulunmaktır. Bozu
 
 [PHPUnit](http://phpunit.de) PHP uygulamaları için birim test yazmak için de-facto test çatısıdır. Buna ek olarak bir kaç alternatif de bulunmaktadır.
 
-* [SimpleTest](http://simpletest.org)
-* [Enhance PHP](http://www.enhance-php.com/)
-* [PUnit](http://punit.smf.me.uk/)
 * [atoum](https://github.com/atoum/atoum)
+* [Enhance PHP](https://github.com/Enhance-PHP/Enhance-PHP)
+* [PUnit](http://punit.smf.me.uk/)
+* [SimpleTest](http://simpletest.org)
+
 
 ### Entegrasyon Test (Integration Testing)
 
@@ -45,3 +46,4 @@ Birim test için kullanılan bir çok araç entegrasyon testi için de kullanıl
 * [Selenium](http://seleniumhq.com)
 * [Mink](http://mink.behat.org)
 * [Codeception](http://codeception.com) is a full-stack testing framework that includes acceptance testing tools
+* [Storyplayer](http://datasift.github.io/storyplayer) is a full-stack testing framework that includes support for creating and destroying test environments on demand

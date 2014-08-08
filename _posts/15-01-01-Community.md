@@ -12,7 +12,7 @@ Büyük olduğu kadar farklı(çeşitlilik açısından) PHP toplulukları mevcu
 
 ## PHP Kullanıcı Grupları
 
-Büyük bir şehirde yaşıyorsanız, yakınlarınızda bir PHP kullanıcı grubu vardır. Resmin bir liste bulunmamasına rağmen [Google][google] veya [Meetup.com][meetup] üzeriden bu grupları arayabilirsiniz. Daha küçük bir şehirde yaşıyorsanız, yerel bir grup olmayabilir. Bu durumda siz bir tane başlatın.
+Büyük bir şehirde yaşıyorsanız, yakınlarınızda bir PHP kullanıcı grubu vardır. Resmin bir liste bulunmamasına rağmen [Google][google] veya [Meetup.com][meetup] veya [PHP.ug][php-ug] üzeriden bu grupları arayabilirsiniz. Daha küçük bir şehirde yaşıyorsanız, yerel bir grup olmayabilir. Bu durumda siz bir tane başlatın.
 
 [PHP Wiki'deki Kullanıcı Grupları Hakkında][php-wiki]
 
@@ -25,9 +25,10 @@ PHP toplulukları tarafından dünya üzerinde birçok ülkede bölgesel ve ulus
 [php-calendar]: http://www.php.net/cal.php
 [google]: https://www.google.com/search?q=php+user+group+near+me
 [meetup]: http://www.meetup.com/find/
+[php-ug]: http://php.ug
 [php-wiki]: https://wiki.php.net/usergroups
 [php-conf]: http://php.net/conferences/index.php
 [phpc-twitter]: https://twitter.com/phpc
 [php-programmers-gplus]: https://plus.google.com/u/0/communities/104245651975268426012
-[php-irc]: http://webchat.freenode.net/
+[php-irc]: http://webchat.freenode.net/?channels=phpc
 [php-so]: http://stackoverflow.com/questions/tagged/php
