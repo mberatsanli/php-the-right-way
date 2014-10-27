@@ -1,7 +1,7 @@
 ---
 title: Vagrant (Sanal Sunucu)
 isChild: true
-anchor: vagrant
+anchor: vagrant_sanal_sunucu
 ---
 
 ## Vagrant (Sanal Sunucu) {#vagrant_sanal_sunucu_title}

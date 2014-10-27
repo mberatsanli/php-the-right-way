@@ -50,7 +50,7 @@
         var previous = "";
         var foundOne = false;
         var fallback = "";
-        $('h1, h2, div').each(function(i, e) {
+        $('h1, h2').each(function(i, e) {
             //get element position;
             var eTop = $(e).offset().top;
             var eBottom = eTop + $(e).height();

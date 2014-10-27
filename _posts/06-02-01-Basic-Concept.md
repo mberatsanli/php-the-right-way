@@ -1,10 +1,10 @@
 ---
-title: Basic Concept
+title: Temel Kavramlar
 isChild: true
-anchor: basic_concept
+anchor: temel_kavramlar
 ---
 
-## Temel Kavramlar
+## Temel Kavramlar {#temel_kavramlar_title}
 
 Basit bir örnek ile kavramları size anlatmaya çalışalım.
 
