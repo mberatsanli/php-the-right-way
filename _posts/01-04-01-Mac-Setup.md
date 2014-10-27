@@ -1,7 +1,7 @@
 ---
 title: Mac (OSX) Kurulumu
 isChild: true
-anchor: mac_kurulumu
+anchor: mac_osx_kurulumu
 ---
 
 ## Mac (OSX) Kurulumu  {#mac_osx_kurulumu_title}
