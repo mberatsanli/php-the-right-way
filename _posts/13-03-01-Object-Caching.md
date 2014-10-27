@@ -4,7 +4,7 @@ isChild: true
 anchor: nesnel_onbellekleme
 ---
 
-## Nesnel Önbellekleme
+## Nesnel Önbellekleme {#nesnel_onbellekleme_title}
 
 Veritabanından çağırmanın veya verinin getirilmesinin masraflı olduğu ve verinin değişmediği durumlar gibi kodunuzda
 bireysel nesneleri önbelleklemenin yararlı olabileceği zamanlar vardır. Bu verileri bellekte tutmak ve daha sonra

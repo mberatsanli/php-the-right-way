@@ -1,7 +1,7 @@
 ---
 title: Bytecode Cache (Önbelleği)
 isChild: true
-anchor: bytecode_cache
+anchor: bytecode_cache_onbellegi
 ---
 
 ## Bytecode Cache (Önbelleği) {#bytecode_cache_onbellegi_title}
