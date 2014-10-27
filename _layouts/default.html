@@ -49,7 +49,7 @@
                             {% assign insideSection = false %}
                         {% endif %}
                     {% endif %}
-                    <li><a href="/php-the-right-way/#{{ post.anchor | downcase | replace:' ','_' | replace:'(','' | replace:')','' | replace:'.','' | replace:'-','' | replace:'ü','u' | replace:'ş','s' | replace:'ö','o' | replace:'ğ','g' | replace:'ç','c' | replace:'ı','i' | replace:'İ','i' | replace:'Ç','c' | replace:'Ş','s' | replace:'Ö','o' }}">{{ post.title }}</a>
+                    <li><a href="/php-the-right-way/#{{ post.anchor }}">{{ post.title }}</a>
                     {% if post.isChild %}
                         </li>
                     {% else %}
