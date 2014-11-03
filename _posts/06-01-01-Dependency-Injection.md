@@ -3,7 +3,7 @@ title: Dependency Injection
 anchor: dependency_injection
 ---
 
-# Dependency Injection {#dependency_injection_title}
+## Dependency Injection {#dependency_injection_title}
 
 From [Wikipedia](http://en.wikipedia.org/wiki/Dependency_injection):
 
