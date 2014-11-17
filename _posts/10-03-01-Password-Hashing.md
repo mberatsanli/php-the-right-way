@@ -1,7 +1,7 @@
 ---
 title: Şifre Karıştırma (hashing)
 isChild: true
-anchor: sifreleme_karistirma_hashing
+anchor: sifre_karistirma_hashing
 ---
 
 ## Şifre Karıştırma (hashing) {#sifre_karistirma_hashing_title}
