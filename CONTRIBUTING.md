@@ -51,8 +51,8 @@ included in the project:
 2. If you cloned a while ago, get the latest changes from upstream:
 
    ```bash
-   git checkout master
-   git pull upstream master
+   git checkout gh-pages
+   git pull upstream gh-pages
    ```
 
 3. Create a new topic branch (off the main project development branch) to
@@ -64,6 +64,13 @@ included in the project:
 
 4. Install the [Jekyll](https://github.com/mojombo/jekyll/) gem to preview locally.
 
+   ```bash
+   # Install the needed gems through Bundler
+   bundle install
+   # Run the local server
+   bundle execute jekyll s
+   ```
+
 5. Commit your changes in logical chunks. Please adhere to these [git commit
    message guidelines](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
    or your content is unlikely be merged into the main project. Use Git's
@@ -73,7 +80,7 @@ included in the project:
 6. Locally merge (or rebase) the upstream development branch into your topic branch:
 
    ```bash
-   git pull [--rebase] upstream master
+   git pull [--rebase] upstream gh-pages
    ```
 
 7. Push your topic branch up to your fork:
@@ -109,3 +116,4 @@ All content is completely free now, and always will be.
 3. Wrap all text to 120 characters
 4. Code samples should adhere to PSR-1 or higher
 5. Use [GitHub Flavored Markdown](http://github.github.com/github-flavored-markdown/) for all content
+6. Use language agnostic urls when referring to external websites such as the [php.net](http://php.net/urlhowto.php) manual

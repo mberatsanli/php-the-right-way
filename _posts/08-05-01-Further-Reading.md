@@ -1,11 +1,11 @@
 ---
 isChild: true
-anchor: templating_further_reading
+anchor: templating_ekstra_okumalar
 ---
 
-## Further Reading {#templating_further_reading_title}
+## Ekstra kaynaklar {#templating_ekstra_okumalar_title}
 
-### Articles & Tutorials
+### Makaleler & Örnekler
 
 - [Templating Engines in PHP](http://fabien.potencier.org/article/34/templating-engines-in-php)
 - [An Introduction to Views & Templating in CodeIgniter](http://code.tutsplus.com/tutorials/an-introduction-to-views-templating-in-codeigniter--net-25648)
@@ -14,7 +14,7 @@ anchor: templating_further_reading
 - [Master Pages](https://laracasts.com/series/laravel-from-scratch/episodes/7)
 - [Working With Templates in Symfony 2](http://code.tutsplus.com/tutorials/working-with-templates-in-symfony-2--cms-21172)
 
-### Libraries
+### Kütüphaneler
 
 - [Aura.View](https://github.com/auraphp/Aura.View) *(native)*
 - [Blade](http://laravel.com/docs/templates) *(compiled, framework specific)*
