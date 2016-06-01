@@ -6,18 +6,42 @@ anchor: windows_kurulumu
 
 ## Windows Kurulumu {#windows_kurulumu_title}
 
-PHP'nin Windows üzerinde kurulumu ile ilgili çeşitli yollar bulunmaktadır. ".msi" kurulum paketi olarak [indirebilirsiniz][php-downloads]. Bu kurulum dosyası PHP 5.3.0'dan sonra desteklenmemektedir.
+[windows.php.net/download][php-downloads] adresinden binary indirebilirsiniz. 
+PHP'yi çıkardıktan sonra PHP'yi heryerden çalıştırabilmek için bir sizin PHP 
+klasörünüze (php.exe nerede ise) [PATH][windows-path] belirlemenizi önerir.
 
-PHP'yi öğrenmek ve kendi makinenizde geliştirme yapmak için PHP 5.4+ ile birlikte gelen dahili sunucuyu kullanabilirsiniz. Ayarlar konusunda endişelenmenize gerek kalmaz. [Web Platform Installer][wpi],
-[Zend Server CE][zsce], [XAMPP][xampp], [EasyPHP][easyphp] ve [WAMP][wamp] gibi herşey içinde bir araç kullanırsanız bu sizin için Windows geliştirme ortamının kurulması ve çalıştırılması için hız katacaktır. Eğer Windows üzerinde geliştirirken Linux üzerinde yayınlıyorsanız, bu araçlar (üretim) yayınlama aşamasından biraz farklı sonuçlar doğurabilir, bu konuda dikkatli olun.
+Öğrenmek ve yerel geliştirme için hali hazırda gelen PHP 5.4+ sürümü 
+kullanabilirsiniz ve konfigürasyonu düşünmeniz gerekmez. Eğer hepsi bir arada 
+bir kurulum (MySQL ve bir çok ekstra araç içeren) istiyorsanız, 
+[Web Platform Installer][wpi], [XAMPP][xampp], [EasyPHP][easyphp], 
+[OpenServer][openserver] ve [WAMP][wamp] size Windows platformunda hızlıca bir 
+kurulum için yardımcı olacaktır. Bu araçlar production ortamına göre biraz 
+farklılıklar içerecektir. Eğer uygulamanızı Linux ortamında yayınlarken Windows 
+ortamında geliştirme yapıyorsanız biraz dikkat etmeniz gerekebilir.
 
-Eğer geliştirme ortamınız Windows iken Windows üzerinde yayınlayacaksanız, IIS7 daha kararlı ve performanslı olacaktır. PHP'yi ayarlamak ve yönetmek için [phpmanager][phpmanager] (IIS7 için GUI eklentisi) kullanabilirsiniz. IIS7 FastCGI desteği ile birlikte gelmektedir. Sadece işleyici olarak PHP'yi tanımlamanız gerekir. Destek ve ek kaynaklar için [dedicated area on iis.net][php-iis] adresini kullanabilirsiniz.
+Eğer uygulamanızı Windows ortamında yayınlamak istiyorsanız IIS7 size daha stabil
+ve en iyi performansı sunacaktır. [Phpmanager][phpmanager] (IIS7 için bir arayüz 
+eklentisi) size PHP konfigürasyonları ve yönetimi için kolaylık sağlayacaktır.
+IIS7 FastCGI ile gelmektedir sadece PHP'yi handler olarak ayarlamanız yeterlidir. 
+Ekstra kaynaklar için [Dedicated area on iis.net][php-iis] adresine bakabilirsiniz. 
 
-[php-downloads]: http://windows.php.net
-[phpmanager]: http://phpmanager.codeplex.com/
-[wpi]: http://www.microsoft.com/web/downloads/platform.aspx
-[zsce]: http://www.zend.com/en/products/server-ce/
-[xampp]: http://www.apachefriends.org/en/xampp.html
+Genellikle uygulamalar farklı ortamlarda çalıştırıldığı için uygulama 
+yayınlandığında farklı hatalar ile karşılaşılabilir. Eğer Windows ortamında 
+geliştirirken projenizi Linux (ya da Windows olmayan herhangi bir yerde) 
+ortamında yayınlıyorsanız, [Virtual Machine](/#virtualization_title) kullanmayı 
+düşünmelisiniz. 
+
+Chris Tankersley'in Windows ortamında kullanılacak araçlar ile ilgili çok yararlı 
+blog yazılarıbulunmaktadır. [PHP development using Windows][windows-tools].
+
+
 [easyphp]: http://www.easyphp.org/
-[wamp]: http://www.wampserver.com/
+[phpmanager]: http://phpmanager.codeplex.com/
+[openserver]: http://open-server.ru/
+[wamp]: http://www.wampserver.com/en/
+[php-downloads]: http://windows.php.net/download/
 [php-iis]: http://php.iis.net/
+[windows-path]: http://www.windows-commandline.com/set-path-command-line/
+[windows-tools]: http://ctankersley.com/2015/07/01/developing-on-windows/
+[wpi]: http://www.microsoft.com/web/downloads/platform.aspx
+[xampp]: http://www.apachefriends.org/en/xampp.html
