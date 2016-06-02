@@ -17,11 +17,11 @@ koymayınız!
 
 Aşağıdaki komutları komut satırında çalıştırmayı deneyiniz :
 
-{% highlight bash %}
+{% highlight console %}
 > php -i
 {% endhighlight %}
 
-`-i` özelliği PHP'nin konfigürasyonlarını [`phpinfo`][phpinfo] fonksiyonu gibi
+`-i` özelliği PHP'nin konfigürasyonlarını [`phpinfo()`][phpinfo] fonksiyonu gibi
 ekrana bastıracaktır.
 
 `-a` özelliği ise ruby'nin IRBsi veya python gibi interaktif bir kabuk
@@ -33,7 +33,7 @@ dosya oluşturup bunu çalıştırmayı deneyin.
 
 {% highlight php %}
 <?php
-if ($argc != 2) {
+if ($argc !== 2) {
     echo "Usage: php merhaba.php [isim].\n";
     exit(1);
 }
@@ -53,7 +53,7 @@ olmayan bir değişken ile kullanılmalıdır. Genelde kullanılan exit  komutla
 
 Kodumuzu çalıştırmak için aşağıdaki satırları kullanabilirsiniz :
 
-{% highlight bash %}
+{% highlight console %}
 > php merhaba.php
 Usage: php merhaba.php [isim]
 > php merhaba.php dunya
@@ -64,10 +64,10 @@ Merhaba, dunya
  * [PHP komut satırı arayüzü hakkında][php-cli]
  * [Windows'da PHP komut satırı arayüzü][php-cli-windows]
 
-[phpinfo]: http://php.net/manual/tr/function.phpinfo.php
-[cli-options]: http://www.php.net/manual/tr/features.commandline.options.php
-[argc]: http://php.net/manual/tr/reserved.variables.argc.php
-[argv]: http://php.net/manual/tr/reserved.variables.argv.php
-[php-cli]: http://php.net/manual/tr/features.commandline.php
-[php-cli-windows]: http://www.php.net/manual/tr/install.windows.commandline.php
-[exit-codes]: http://www.gsp.com/cgi-bin/man.cgi?section=3&topic=sysexits
+[phpinfo]: http://php.net/function.phpinfo
+[cli-options]: http://php.net/features.commandline.options
+[argc]: http://php.net/reserved.variables.argc
+[argv]: http://php.net/reserved.variables.argv
+[exit-codes]: http://www.gsp.com/cgi-bin/man.cgi?section=3&amp;topic=sysexits
+[php-cli]: http://php.net/features.commandline
+[php-cli-windows]: http://php.net/install.windows.commandline
