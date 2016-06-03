@@ -1,13 +1,13 @@
 ---
 isChild: true
 title: Interacting with Databases
-anchor: databases_interacting
+anchor: veritabani_ile_etkilesim
 ---
 
-## Interacting with Databases {#databases_interacting_title}
+## Veritabanı ile etkilesim {#veritabani_ile_etkilesim_title}
 
-When developers first start to learn PHP, they often end up mixing their database interaction up with their
-presentation logic, using code that might look like this:
+Geliştiriciler PHP öğrenmeye başladıkları zaman, genellikle kendi yöntemleri ile
+bunu yapmaktadırlar ve kodları şu şekilde görünür:
 
 {% highlight php %}
 <ul>
@@ -18,26 +18,35 @@ foreach ($db->query('SELECT * FROM table') as $row) {
 </ul>
 {% endhighlight %}
 
-This is bad practice for all sorts of reasons, mainly that its hard to debug, hard to test, hard to read and it is going to output a lot of fields if you don't put a limit on there.
+Bu kötü bir yöntemdir, ana olarak test edilmesi, debug edilmesi ve okunması 
+zordur ve eğer bir limit konulmaz ise bütün alanları dışarıya çıktı olarak 
+verebilirsiniz. 
 
-While there are many other solutions to doing this - depending on if you prefer [OOP](/#object-oriented-programming) or [functional programming](/#functional-programming) - there must be some element of separation.
+[OOP](#object-oriented-programming) ya da [functional programming](#functional-programming)
+seçimlerine göre bunu yapmanın bir çok farklı yolları vardır. 
 
-Consider the most basic step:
+En temel adımı düşünün:
 
 {% highlight php %}
 <?php
-function getAllSomethings($db) {
+function getAllFoos($db) {
     return $db->query('SELECT * FROM table');
 }
 
-foreach (getAllFoos() as $row) {
+foreach (getAllFoos($db) as $row) {
     echo "<li>".$row['field1']." - ".$row['field1']."</li>"; // BAD!!
 }
 {% endhighlight %}
 
-That is a good start. Put those two items in two different files and you've got some clean separation.
+Bu iyi bir başlangıçtır. İki farklı kalemi iki arklı dosyaya koyun ve bazı 
+temizlikler yapın. 
 
-Create a class to place that method in and you have a "Model". Create a simple `.php` file to put the presentation logic in and you have a "View", which is very nearly [MVC] - a common OOP architecture for most [frameworks](/#frameworks_title).
+Bir sınıf oluşturun ve içerisine bazı methodlarınızı koyun ve artık bir 
+"Model"iniz var. Basit bir `.php` dosyası oluşturun ve sunum logic'inizi bu 
+dosyanın içerisine koyun ve bir "View" katmanı oluşturun. Neredeyse bir [MVC]
+oluşturdunuz ki bu OOP mimarisi neredeyse bir çok 
+[framework](#frameworks_title)'de mevcut.
+
 
 **foo.php**
 
@@ -50,7 +59,9 @@ $db = new PDO('mysql:host=localhost;dbname=testdb;charset=utf8', 'username', 'pa
 include 'models/FooModel.php';
 
 // Create an instance
-$fooList = new FooModel($db);
+$fooModel = new FooModel($db);
+// Get the list of Foos
+$fooList = $fooModel->getAllFoos();
 
 // Show the view
 include 'views/foo-list.php';
@@ -61,7 +72,7 @@ include 'views/foo-list.php';
 
 {% highlight php %}
 <?php
-class Foo()
+class FooModel()
 {
     protected $db;
 
@@ -79,9 +90,9 @@ class Foo()
 **views/foo-list.php**
 
 {% highlight php %}
-<? foreach ($fooList as $row): ?>
-    <?= $row['field1'] ?> - <?= $row['field1'] ?>
-<? endforeach ?>
+<?php foreach ($fooList as $row): ?>
+    <?php echo $row['field1'] ?> - <?= $row['field1'] ?>
+<?php endforeach ?>
 {% endhighlight %}
 
 This is essentially the same as what most modern frameworks are doing, all be it a little more manual. You might

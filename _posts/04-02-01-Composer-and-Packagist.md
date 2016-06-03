@@ -9,28 +9,35 @@ anchor: composer_ve_packagist
 Composer PHP için **muhteşem** bir bağımlılık yönetimi aracıdır. Bağımlılık
 yönetimini bir kaç basit komut ile `composer.json` dosyası içerisinde yazıyoruz,
 Composer projenizin ihtiyaçlarını otomatik olarak indiriyor ve kurulumunu
-gerçekleştiriyor.
+gerçekleştiriyor. Composer Node.js'deki NPM ile veya Ruby'deki Bundler ile 
+benzerdir. 
 
 Composer ile uyumlu şimdiden projenizde kullanmanız için bir çok PHP kütüphanesi
-bulunmakta. Bu paketler Composer'ın resmi deposu olan [Packagist][1]'da
+bulunmakta. Bu paketler Composer'ın resmi deposu olan [Packagist]'da
 listelenmetedir.
 
 ### Composer Nasıl Kurulur
 
 Yerel (önerilmemesine rağmen içinde bulunduğunuzu dizin için) ya da genel
-(örneğin: /usr/local/bin) kullanım için Composer'ı kurabilirsiniz. Yerel olarak
+(örneğin: /usr/local/bin) kullanım için Composer'ı kurabilirsiniz. Global olarak
 kurmak için aşağıdaki örneğe bakınız:
 
-    curl -s https://getcomposer.org/installer | php
+{% highlight console %}
+curl -sS https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer
+{% endhighlight %}
+
+**Not:** Eğer `mv` ile ilgili bir izin hatası alıyorsanız `sudo` kullanabilirsiniz. 
 
 Bu komut `composer.phar` (bir PHP ikili arşivi) dosyası indirecek. Bu dosyayı
 `php` kullanarak çalıştırabilir ve projenizin ihtiyaçlarını yönetebilirsiniz.
+
 <strong>Not:</strong> Kodu çevirici bir kaynağa indirdi iseniz öncelikle çevrim
 içi kod okuyunuz.
 
 #### Windows Kurulumu
 
-Windows kullanıcıları için [ComposerSetup][6] adında bir kurulum dosyası
+Windows kullanıcıları için [ComposerSetup] adında bir kurulum dosyası
 bulunmaktadır. Bu kurulum dosyası `$PATH` dizinine yani global dizine kurulum
 yapmaktadır. Kullanırken `composer` komutu ile direk çalışabilirsiniz.
 
@@ -51,8 +58,10 @@ Bu kurulum adımlarının hiçbiri olmadan yapılan elle kurulumda, sizin için 
 değerinin olup olmadığına karar vermelisiniz. Aşağıdaki komutlar ile elle
 kuruluma başlayalım :
 
-    curl -s https://getcomposer.org/composer.phar -o $HOME/local/bin/composer
-    chmod +x $HOME/local/bin/composer
+{% highlight console %}
+curl -s https://getcomposer.org/composer.phar -o $HOME/local/bin/composer
+chmod +x $HOME/local/bin/composer
+{% endhighlight %}
 
 `$HOME/local/bin` dizini (ya da sizin seçeceğiniz bir dizin) sizin `$PATH`
 değişkeninizin içerisinde olmalı. Bu `composer` komutunu kullanılabilir
@@ -61,7 +70,9 @@ yapacaktır.
 Dökümantasyonda karşılaştığımız `php composer.phar install` komutunu aşağıdaki
 gibi kullanabilirsiniz :
 
-    composer install
+{% highlight console %}
+composer install
+{% endhighlight %}
 
 Bu bölüm compeser'ın global olarak nasıl kurulduğunu varsayar.
 
@@ -71,16 +82,20 @@ Composer proje bağımlılığını `composer.json` isimli bir dosya ile sağlar
 Bu dosyayı elle ya da Composer vasıtasıyla güncelleyebilirsiniz.
 `composer.phar require` komutu projenize bağımlılığı ekler ve daha önce
 oluşturmamış iseniz `composer.json` dosyanızı oluşturur. Aşağıda bir örnek
-yapalım ve projemize [Twig][2]'i ekleyelim.
+yapalım ve projemize [Twig]'i ekleyelim.
 
-	composer require twig/twig:~1.8
+{% highlight console %}
+composer require twig/twig:~1.8
+{% endhighlight %}
 
 `composer init` komutu sana tam bir `composer.json` dosyası oluşturmak için
 rehber olabilir. Herhangi bir şekilde `composer.json` dosyanızı oluşturduktan
 sonra aşağıdaki komutu kullanarak Composer ile bağımlılıklarınızı `vendor/`
 dizini altına indirebilir ve yükleyebilirsiniz.
 
-    composer install
+{% highlight console %}
+composer install
+{% endhighlight %}
 
 Daha sonra aşağıdaki satırları uygulamanızın ana PHP dosyasına ekleyiniz;
 bunları nasıl yapacağınız size zaten Composer'daki projelerde bildirilecek.
@@ -111,23 +126,37 @@ belirlediğiniz tanımlamalara göre bağımlılıklarınızı güncelleyecektir
 
 ### Güncelleme Bildirimleri
 
-Yeni versiyon geldiğinde bildirim almak için [VersionEye][3]'a kayıt
+Yeni versiyon geldiğinde bildirim almak için [VersionEye]'a kayıt
 olabilirsiniz, bu web servisi `composer.json` dosyasındaki dosyaların Github
 veya BitBucket üzerindeki hesaplarını sizin için kontrol eder ve yeni bir
 release çıktığında size e-posta gönderir.
 
 ### Güvenlik konusundaki bağımlılıklarınız kontrol etmek
 
-[Security Advisories Checker][4] komut satırından ve web arayüzü olarak
+[Security Advisories Checker] komut satırından ve web arayüzü olarak
 çalışabilen bir servistir. Sizin `composer.lock` dosyanızı algılar ve bir
 güncellemeye ihtiyacınız olup olmadığını tespit eder.
 
-* [Composer Hakkında Daha Fazlası][5]
+### Global bağımlılıkları Composer ile yönetmek
 
+Composer global bağımlılıkları ve binary hallerini yönetebilir. Kullanımı basit,
+Sadece ihtiyacınız her bir komutun başına `global` komutunu eklemek. Eğer PHPUnit'i
+global olarak yüklemek istiyorsanız, aşağıdaki komutu çalıştırabilirsiniz: 
 
-[1]: http://packagist.org/
-[2]: http://twig.sensiolabs.org
-[3]: https://www.versioneye.com/
-[4]: https://security.sensiolabs.org/
-[5]: http://getcomposer.org/doc/00-intro.md
-[6]: https://getcomposer.org/Composer-Setup.exe
+{% highlight console %}
+composer global require phpunit/phpunit
+{% endhighlight %}
+
+Bu komut bağımlılıklarınızın bulunacağı `~/.composer` klasörünü oluşturacaktır. 
+Kurulan kütüphanelerinizi veya bağımlılıklarınızın binary dosyalarınını global 
+olarak çalıştırmak için `~/.composer/vendor/bin` dizinini `$PATH` değişkenine 
+ekleyebilirsiniz. 
+
+* [Learn about Composer]
+
+[Packagist]: http://packagist.org/
+[Twig]: http://twig.sensiolabs.org
+[VersionEye]: https://www.versioneye.com/
+[Security Advisories Checker]: https://security.sensiolabs.org/
+[Learn about Composer]: http://getcomposer.org/doc/00-intro.md
+[ComposerSetup]: https://getcomposer.org/Composer-Setup.exe
