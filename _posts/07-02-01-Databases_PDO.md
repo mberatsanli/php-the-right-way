@@ -4,7 +4,7 @@ anchor: veritabanlari-pdo
 isChild: true
 ---
 
-# Veritabanları PDO {#veritabanlari_pdo_title}
+## Veritabanları PDO {#veritabanlari_pdo_title}
 
 PDO bir veritabanı soyutlama kütüphanesidir. &mdash; PHP 5.1.0'den beri &mdash; 
 PDO farklı veritabanları ile bağlantı için genel bir arayüz sunar. PDO SQL 
