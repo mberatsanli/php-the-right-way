@@ -95,11 +95,15 @@ class FooModel()
 <?php endforeach ?>
 {% endhighlight %}
 
-This is essentially the same as what most modern frameworks are doing, all be it a little more manual. You might
-not need to do all of that every time, but mixing together too much presentation logic and database interaction can be a real problem if you ever want to [unit-test](/#unit-testing) your application.
+Bu aslında modern framework'lerin yaptıklarıyla aynı, sadece biraz daha manual
+yöntemler kullanılmaktadır. Tüm bu şeyleri her zaman yapanız gerekmez, ama çok 
+fazla gösterim mantığı(presentation logic) ve veritabanı etkileşimi olan gerçek 
+bir uygulama veya problem olabilir. Bu durumda bu katmanları farklı şekillerde 
+kullanmak isteyebilirsiniz. Örneğin [unit-test](#unit-testing) için SQLite 
+kullanırken uygulama için PostgreSQL kullanmanız gerekebilir. 
 
-[PHPBridge] have a great resource called [Creating a Data Class] which covers a very similar topic, and is great
-for developers just getting used to the concept of interacting with databases.
+[PHPBridge] veritabanı ile etkileşim konsepti için [Creating a Data Class] olarak 
+bilinen güzel bir kaynaktır. Göz atabilirsiniz.
 
 [MVC]: http://code.tutsplus.com/tutorials/mvc-for-noobs--net-10488
 [PHPBridge]: http://phpbridge.org/
