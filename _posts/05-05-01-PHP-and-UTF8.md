@@ -96,17 +96,17 @@ $string = mb_substr($string, 0, 15);
 // Daha fazla bilgi için PDO örneklerine bakabilirsiniz.
 // Not: `set names utf8mb4`
 $link = new \PDO(
-                    'mysql:host=your-hostname;dbname=your-db;charset=utf8mb4',
-                    'your-username',
-                    'your-password',
-                    array(
-                        \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
-                        \PDO::ATTR_PERSISTENT => false
-                    )
-                );
+    'mysql:host=your-hostname;dbname=your-db;charset=utf8mb4',
+    'your-username',
+    'your-password',
+    array(
+        \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
+        \PDO::ATTR_PERSISTENT => false
+    )
+);
 
 // Değiştirdiğimiz metni UTF-8 olarak veritabanına kaydediyoruz
-// Veritaanı ve tablolarınız utf8bm4 formatında değil mi?
+// Veritabanı ve tablolarınız utf8bm4 formatında değil mi?
 $handle = $link->prepare('insert into ElvishSentences (Id, Body) values (?, ?)');
 $handle->bindValue(1, 1, PDO::PARAM_INT);
 $handle->bindValue(2, $string);
@@ -138,21 +138,23 @@ header('Content-Type: text/html; charset=utf-8');
 
 ### Daha fazla bilgi
 
-* [PHP Manual: String Operations](http://php.net/manual/en/language.operators.string.php)
-* [PHP Manual: String Functions](http://php.net/manual/en/ref.strings.php)
-    * [`strpos()`](http://php.net/manual/en/function.strpos.php)
-    * [`strlen()`](http://php.net/manual/en/function.strlen.php)
-    * [`substr()`](http://php.net/manual/en/function.substr.php)
-* [PHP Manual: Multibyte String Functions](http://php.net/manual/en/ref.mbstring.php)
-    * [`mb_strpos()`](http://php.net/manual/en/function.mb-strpos.php)
-    * [`mb_strlen()`](http://php.net/manual/en/function.mb-strlen.php)
-    * [`mb_substr()`](http://php.net/manual/en/function.mb-substr.php)
-    * [`mb_internal_encoding()`](http://php.net/manual/en/function.mb-internal-encoding.php)
-    * [`mb_http_output()`](http://php.net/manual/en/function.mb-http-output.php)
-    * [`htmlentities()`](http://php.net/manual/en/function.htmlentities.php)
-    * [`htmlspecialchars()`](http://www.php.net/manual/en/function.htmlspecialchars.php)
+* [PHP Manual: String Operations](http://php.net/language.operators.string)
+* [PHP Manual: String Functions](http://php.net/ref.strings)
+    * [`strpos()`](http://php.net/function.strpos)
+    * [`strlen()`](http://php.net/function.strlen)
+    * [`substr()`](http://php.net/function.substr)
+* [PHP Manual: Multibyte String Functions](http://php.net/ref.mbstring)
+    * [`mb_strpos()`](http://php.net/function.mb-strpos)
+    * [`mb_strlen()`](http://php.net/function.mb-strlen)
+    * [`mb_substr()`](http://php.net/function.mb-substr)
+    * [`mb_internal_encoding()`](http://php.net/function.mb-internal-encoding)
+    * [`mb_http_output()`](http://php.net/function.mb-http-output)
+    * [`htmlentities()`](http://php.net/function.htmlentities)
+    * [`htmlspecialchars()`](http://php.net/function.htmlspecialchars)
 * [PHP UTF-8 Cheatsheet](http://blog.loftdigital.com/blog/php-utf-8-cheatsheet)
+* [Handling UTF-8 with PHP](http://www.phpwact.org/php/i18n/utf-8)
 * [Stack Overflow: What factors make PHP Unicode-incompatible?](http://stackoverflow.com/questions/571694/what-factors-make-php-unicode-incompatible)
 * [Stack Overflow: Best practices in PHP and MySQL with international strings](http://stackoverflow.com/questions/140728/best-practices-in-php-and-mysql-with-international-strings)
 * [How to support full Unicode in MySQL databases](http://mathiasbynens.be/notes/mysql-utf8mb4)
-* [Brining Unicode to PHP with Portable UTF-8](http://www.sitepoint.com/bringing-unicode-to-php-with-portable-utf8/)
+* [Bringing Unicode to PHP with Portable UTF-8](http://www.sitepoint.com/bringing-unicode-to-php-with-portable-utf8/)
+* [Stack Overflow: DOMDocument loadHTML does not encode UTF-8 correctly](http://stackoverflow.com/questions/8218230/php-domdocument-loadhtml-not-encoding-utf-8-correctly)

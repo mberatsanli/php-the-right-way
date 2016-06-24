@@ -43,7 +43,7 @@ neredeyse tüm durumlarda değişmeli olarak kullanılabilmektedir.
 * ["Closure class" hakkında][closure-class]
 * ["Closures RFC" hakkında][closures-rfc]
 * ["Callables" hakkında][callables]
-* [`call_user_func_array` ile dinamik olarak fonksiyon çağırmak hakkında][call-user-func-array]
+* [`call_user_func_array()` ile dinamik olarak fonksiyon çağırmak hakkında][call-user-func-array]
 
 ### Meta Programlama
 
@@ -57,6 +57,7 @@ olmaması durumu) eksik olduğunu söylerler. Ancak PHP bunu `__call()` ve
 
 * [Sihirli yöntemler hakkında][magic-methods]
 * [Reflection hakkında][reflection]
+* [Overloading hakkında][overloading]
 
 [namespaces]: http://php.net/manual/tr/language.namespaces.php
 [overloading]: http://php.net/manual/tr/language.oop5.overloading.php
@@ -69,3 +70,4 @@ olmaması durumu) eksik olduğunu söylerler. Ancak PHP bunu `__call()` ve
 [traits]: http://www.php.net/traits
 [call-user-func-array]: http://php.net/manual/tr/function.call-user-func-array.php
 [closures-rfc]: https://wiki.php.net/rfc/closures
+[overloading]: http://php.net/language.oop5.overloading

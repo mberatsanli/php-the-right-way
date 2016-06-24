@@ -38,9 +38,26 @@ bileşenden oluşan uygulamalar birbiri ile daha uyumlu olabilir.
 [PHP_CodeSniffer][phpcs] eklentisini kullanarak yazdığınız kodların bu
 standartlardan herhangi birine uyumlu olup olmadığını kontrol edebilirsiniz.
 [Sublime Text 2][st-cs] gibi bir editörde ise bu konuda gerçek zamanlı
-geribildirimler alabilirsiniz. Ayrıca, Fabien Potencier tarafından hazırlanan
-[PHP Coding Standards Fixer][phpcsfixer] uygulamasını kullanarak kodlarınızın
-bu standartlara uygun şekilde otomatik olarak düzeltilmesini sağlayabilirsiniz.
+geribildirimler alabilirsiniz. 
+
+
+[PHP_CodeSniffer][phpcs] aracını bu standartlara karşı uygun olup olmadığını
+kotrol etmek için kullanabilirsiniz veya [Sublime Text 2-3][st-cs] gibi bir 
+editör'e eklenti olarak kurabilir ve neredeyse gerçek zamanlı geribildirimler 
+alabilirsiniz.
+
+Kod düzeninizi aşağıdaki bir kaç aracı kullanarak kolayce düzeltebilirsiniz. 
+Bunlardan birisi iyi test edilmiş bir kod bulunan 
+[PHP Coding Standards Fixer][phpcsfixer]'dir. Diğer bir seçenek ise [sublime-phpfmt][sublime-phpfmt]
+olarak bir Sublime Text ektentisi olan [php.tools][phptools]'dur. 
+
+Ayrıca `phpcs`yi komut satırından da çalıştırabilirsiniz:
+
+    phpcs -sw --standard=PSR2 file.php
+
+Size hataları ve nasıl düzelteceğinize dair açıklamaları gösterecektir. Ayrıca 
+bu komutu git hook olarak da kaydedebilirsiniz. Bu kod deponuza standart olmayan
+hiç bir kodun girmemesinde yardımcı olacaktır. 
 
 İngilizce, kod içinde bulunan değişken, sabit, fonksiyon, yordam gibi semboller
 ve yapılara ait isimlendirmelerde tercih edilmektedir. Yorumlar için ise şu
@@ -59,4 +76,5 @@ yorum satırlarını Türkçe yerine İngilizce yazmanız daha doğru olacaktır
 [phpcs]: http://pear.php.net/package/PHP_CodeSniffer/
 [st-cs]: https://github.com/benmatselby/sublime-phpcs
 [phpcsfixer]: http://cs.sensiolabs.org/
-
+[phptools]: https://github.com/phpfmt/php.tools
+[sublime-phpfmt]: https://github.com/phpfmt/sublime-phpfmt

@@ -22,7 +22,7 @@ DateTime nesnesini tekrar metne çevirmek için kullanılır.
 $raw = '22. 11. 1968';
 $start = \DateTime::createFromFormat('d. m. Y', $raw);
 
-echo 'Başlangıç Tarihi: ' . $start->format('m/d/Y') . "\n";
+echo 'Başlangıç Tarihi: ' . $start->format('Y-m-d') . "\n";
 {% endhighlight %}
 
 DateTime ile hesaplamalar DateInterval sınıfı ile mümkünüdür. DateTime sınıfının
@@ -37,7 +37,7 @@ nesnesi döndürecektir.
 <?php
 // $start'ın bir kopyasını oluşturuyoruz ce bir ay 6 gün ekliyoruz
 $end = clone $start;
-$end->add(new \DateInterval('P1M6D'));
+$end->add(new DateInterval('P1M6D'));
 
 $diff = $end->diff($start);
 echo 'Fark: ' . $diff->format('%m ay, %d gün (toplam: %a days)') . "\n";
@@ -61,16 +61,16 @@ tarihleri geri döner.
 {% highlight php %}
 <?php
 // $start ve $end arasındaki bütün perşembeleri yazdırıyoruz
-$periodInterval = \DateInterval::createFromDateString('first thursday');
-$periodIterator = new \DatePeriod($start, $periodInterval, $end, \DatePeriod::EXCLUDE_START_DATE);
+$periodInterval = DateInterval::createFromDateString('first thursday');
+$periodIterator = new DatePeriod($start, $periodInterval, $end, \DatePeriod::EXCLUDE_START_DATE);
 foreach ($periodIterator as $date) {
     // her bir periyot için çıktı
-    echo $date->format('m/d/Y') . ' ';
+    echo $date->format('Y-m-d') . ' ';
 }
 {% endhighlight %}
 
 * [DateTime hakkında][datetime]
 * [Tarih Formatlama hakkında][dateformat] (kabul edilen tarih formatı seçenekleri)
 
-[datetime]: http://www.php.net/manual/tr/book.datetime.php
-[dateformat]: http://www.php.net/manual/tr/function.date.php
+[datetime]: http://php.net/book.datetime
+[dateformat]: http://php.net/function.date

@@ -13,5 +13,7 @@ yapıları veya kendi sınıfları üzerinden ulaşılabilen yineleyiciler SPL a
 oluşturur.
 
 * [SPL hakkında][spl]
+* [SPL video course on Lynda.com(Paid)][spllynda]
 
 [spl]: http://php.net/manual/tr/book.spl.php
+[spllynda]: http://www.lynda.com/PHP-tutorials/Up-Running-Standard-PHP-Library/175038-2.html

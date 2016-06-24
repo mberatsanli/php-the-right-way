@@ -1,12 +1,20 @@
 ---
-title: Güncel ve Tutarlı Sürümü Kullanın (5.6)
+title: Güncel ve Tutarlı Sürümü Kullanın (7.0)
 isChild: true
 anchor: guncel_ve_tutarli_surumunu_kullanin
 ---
 
-## Güncel ve Tutarlı Sürümü Kullanın (5.6) {#guncel_ve_tutarli_surumunu_kullanin_title}
+## Güncel ve Tutarlı Sürümü Kullanın (7.0) {#guncel_ve_tutarli_surumunu_kullanin_title}
 
-PHP ile tanışmak istiyorsanız, tanışma sürecine güncel ve tutarlı sürüm olan [PHP 5.6][php-release] ile başlayın. PHP yıllardır gelişen [yeni özellikleri](#one_cikanlar) ile daha güçleniyor. 5.2 ve 5.6 sürümleri arasında ne kadar küçük fark varmış gibi görünsede çok _büyük_ geliştirmeler içermektedir. Eğer bir fonksiyonu arıyorsanız ya da nasıl kullanıldığını öğrenmek istiyorsanız [php.net][php-docs] sitesindeki belgeler size yardımcı olacaktır.
+Eğer PHP'ye başlamak istiyorsanız, [PHP 7.0][php-release] ile başlayın. PHP 7.0 
+yeni ve PHP 5.x üzerine, bir çok yeni özelliğe sahip. Ana kodunda bir çok kısım
+yeniden yazıldı ve önceki sürümlerinden daha hızlı.
 
-[php-release]: http://www.php.net/downloads.php
-[php-docs]: http://www.php.net/manual/tr/
+Yakın zamanlarda 5.x sürümleri mevcut ve 5.6 sürümü en son 5.x sürümü. Hangi 
+fonksiyonunun hangi versiyonda olup olmadığını kontrol etmek için [php.net][php-docs]
+sitesindeki dökümantasyonu kontrol edebilirsiniz.
+
+
+[php-release]: http://php.net/downloads.php
+[php-docs]: http://php.net/manual/
+[php70-bc]: http://php.net/manual/migration70.incompatible.php

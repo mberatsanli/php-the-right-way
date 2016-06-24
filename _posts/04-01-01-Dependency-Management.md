@@ -13,13 +13,10 @@ barındırdığınız diğer kütüphane, çatı ya da bileşeni yönetmek için
 yoktu. Elle yönetilse bile, `autoloader` endişesi mevcuttu. Ancak şu anda bu
 endişeye girmenize bir neden yok.
 
-Şu sıralarda PHP için iki büyük paket yönetim sistemi bulunmaktadır. `Composer`
-ve `PEAR`. Hanigis sizin için doğru? Cevap ikisi de.  
+Şu sıralarda PHP için iki büyük paket yönetim sistemi bulunmaktadır. [Composer] ve 
+ve [PEAR]. Composer şu anda PHP için en popüler paket yöneticisi ama PEAR'da uzun
+zaman ana paket yöneticisiydi. Hiç kullanmasanız bile PEAR hakkında bir kaç 
+referans bulabilirsiniz. 
 
- * **Composer** bir proje için bağımlılıkları yönetmek için kullanılır.
- * **PEAR** PHP'nin bütün sisteminin bağımlılığı için kullanılır.
-
-Genelde, `Composer` paketleri projeler içerisinde uygun iken, bir PEAR paketi
-bütün PHP projelerinizde kullanılabilir. PEAR ilk bakışta kolay bir yaklaşım
-gibi gelebilir, project-By-Project yaklaşımın bağımlılıklarınız için avantajları
-vardır.
+[Composer]: #composer_ve_packagist
+[PEAR]: #pear
