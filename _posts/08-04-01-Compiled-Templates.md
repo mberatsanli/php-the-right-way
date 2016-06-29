@@ -1,20 +1,21 @@
 ---
 isChild: true
-anchor: compiled_templates
+title: Derlenen Şablonlar (Compiled Template)
+anchor: derlenmis_sablonlar_template
 ---
 
-## Compiled Templates {#compiled_templates}
+## Derlenmiş Şablonlar(Template) {#derlenmis_sablonlar_template}
 
-While PHP has evolved into a mature, object oriented language, it
-[hasn't improved much](http://fabien.potencier.org/article/34/templating-engines-in-php) as a templating language.
-Compiled templates, like [Twig](http://twig.sensiolabs.org/) or [Smarty](http://www.smarty.net/), fill this void by
-offering a new syntax that has been geared specifically to templating. From automatic escaping, to inheritance and
-simplified control structures, compiled templates are designed to be easier to write, cleaner to read and safer to use.
-Compiled templates can even be shared across different languages, [Mustache](http://mustache.github.io/) being a good
-example of this. Since these templates must be compiled there is a slight performance hit, however this is very minimal
-when proper caching is used.
+PHP nesne odaklı bir dil olarak olgunlaşırken, bir şablon dili gibi [gelişmiş değil](http://fabien.potencier.org/article/34/templating-engines-in-php).
+[Twig](http://twig.sensiolabs.org/) veya [Smarty](http://www.smarty.net/) gibi derlenmiş şablonlar, 
+bu boşluğu yeni bir söz dizimi ile dolduruyorlar. Otomatik sızıntıları önleme, basit kontrol yapıları
+ve kalıtım özelliği ile derlenebilen şablonlar kolay yazmak için, temiz okunabilir ve daha güvenli 
+kullanım için tasarlanmıştır. Derlenen şablonlar hatta farklı diller arasında paylaşılabilirler bile. 
+Buna [Mustache](http://mustache.github.io/) güzel bir örnektir. Şablonlar derlenirken performans
+olarak biraz sıkıntı yaratabilir ancak bu derlenmiş şablon önbelleğe alındığında çok çok küçük 
+bir performans kaybı yaratacaktır. 
 
-Example of a compiled template (using the [Twig](http://twig.sensiolabs.org/) library):
+Örnek bir derlenmiş şablon ([Twig](http://twig.sensiolabs.org/) kütüphanesi ile): 
 
 {% highlight text %}
 {% raw %}

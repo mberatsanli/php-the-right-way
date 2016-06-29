@@ -1,21 +1,22 @@
 ---
 isChild: true
-anchor: templating_benefits
+title: Templating (Şablon)
+anchor: templating(Şablon)_yararlari
 ---
 
-## Benefits {#templating_benefits_title}
+## Yararları {#templating_sablon_yararlari_title}
 
-The main benefit to using templates is the clear separation they create between the presentation logic and the rest of
-your application. Templates have the sole responsibility of displaying formatted content. They are not responsible for
-data lookup, persistence or other more complex tasks. This leads to cleaner, more readable code which is especially
-helpful in a team environment where developers work on the server-side code (controllers, models) and designers work on
-the client-side code (markup).
+Sunum katmanındaki mantığı uygulamanın geri kalanından ayırmak template(şablon) mantığının kullanımındaki ana yarardır. 
+Template yani şablonlar formatlanmış içeriği göstermekle görevlidirler. Verinin erişimi ya da verinin sürekliliği
+ya da daha karmaşık görevler için değillerdir. Geliştiricilerin sunucu tarafındaki kodla (controller, model) 
+ilgilendiği ve tasarımcıların kullanıcı tarafındaki kodla (markup) ilgilendiği bir takım çalışması içerisinde daha 
+okunalı ve temiz kod yazmayı sağlar. 
 
-Templates also improve the organization of presentation code. Templates are typically placed in a "views" folder, each
-defined within a single file. This approach encourages code reuse where larger blocks of code are broken into smaller,
-reusable pieces. For example, your site header and footer can each be defined as templates, which are then included
-before and after each page template.
+Şablonlar sunum katmanındaki kodların organizasyonunuda geliştirir. Şablonlar genellikle "views" klasörü altında
+olurlar ve her biri bir tekil dosya içerisinde bulunur. Bu taklaşım büyük kod parçalarının daha küçük hallere 
+bölünmesiyle birlikte tekrar kullanılabilirliğini de artırır. Örneğin, sizin sitenizde bir başlık ve birde alt başlık 
+kısmı varsa, bu şablonlar her bir sayfanın başına ve sonuna eklenebilir.
 
-Finally, depending on the library you use, templates can offer more security by automatically escaping user-generated
-content. Some libraries even offer sand-boxing, where template designers are only given access to white-listed
-variables and functions.
+Sonuç olarak, kullandığınız kütüphanelere bağlı olarak, şablonlar kullanıcı tarafından oluşturulan içeriklerde 
+bazı kısımlarda işlemler(escaping) yaparak daha güvenli olmasını sağlar. Bazı kütüphaneler daha kapalı kutu 
+olur ve tasarımcılar sadece izin verilen değişkenlere ve methodlara erişebilirler. 

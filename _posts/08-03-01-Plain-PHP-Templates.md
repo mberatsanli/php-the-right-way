@@ -1,22 +1,23 @@
 ---
 isChild: true
-anchor: plain_php_templates
+title: Yalın(Düz) PHP Şablonları
+anchor: yalin_php_sablonlari
 ---
 
-## Plain PHP Templates {#plain_php_templates_title}
+## Yalın PHP Şablonları {#yalin_php_sablonlari_title}
 
-Plain PHP templates are simply templates that use native PHP code. They are a natural choice since PHP is actually a
-template language itself. That simply means that you can combine PHP code within other code, like HTML. This is
-beneficial to PHP developers as there is no new syntax to learn, they know the functions available to them, and their
-code editors already have PHP syntax highlighting and auto-completion built-in. Further, plain PHP templates tend to be
-very fast as no compiling stage is required.
+Yalın PHP şablonları düz PHp kodlarını kullanan basit şablonlardır. Bu doğan bir seçimdir çünkü PHP'nin kendisi 
+aslında bir şablon dilidir. Bunun anlamı siz PHP dilini rahatça HTML gibi dillerin arasında kullanabilirsiniz.
+Bu PHP geliştiricileri başka yeni bir dil öğrenmeden, bildilkleri fonksiyonları kullanarak ve hatta kullandıkları
+editörlerinin renklendirme seçeneklerini bile değiştirmeden kullanabilmeleri için yaralı olabilir. Dahası, düz 
+PHP şablonları tekrar derlenen şablon yöntemlerine göre derlenme aşaması olmadığından daha hızlı çalışacaktır.
 
-Every modern PHP framework employs some kind of template system, most of which use plain PHP by default. Outside of
-frameworks, libraries like [Plates](http://platesphp.com/) or [Aura.View](https://github.com/auraphp/Aura.View) make
-working with plain PHP templates easier by offering modern template functionality such as inheritance, layouts and
-extensions.
+Her modern PHP framework yapısı bir çeşit şablon sistemi kullanmaktadır, bir çoğuda varsayılan olarak düz PHP 
+kullanır. Framework'ler dışında [Plates](http://platesphp.com/) veya [Aura.View](https://github.com/auraphp/Aura.View)
+gibi kütüphaneler kalıtım, tasarım modeli(layout) ve eklenti gibi modern özellikleri sağlayan düz PHP şablonları 
+ile çalışabilmeyi sağlarlar. 
 
-Example of a plain PHP template (using the [Plates](http://platesphp.com/) library):
+Örnek bir düz PHP şablonu ([Plates](http://platesphp.com/) kütüphanesi ile):
 
 {% highlight php %}
 <?php $this->insert('header', ['title' => 'User Profile']) ?>

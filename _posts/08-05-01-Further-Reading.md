@@ -1,9 +1,10 @@
 ---
 isChild: true
+title: Ekstra Kaynaklar
 anchor: templating_ekstra_okumalar
 ---
 
-## Ekstra kaynaklar {#templating_ekstra_okumalar_title}
+## Ekstra Kaynaklar {#templating_ekstra_okumalar_title}
 
 ### Makaleler & Örnekler
 
