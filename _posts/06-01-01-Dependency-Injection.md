@@ -1,16 +1,16 @@
 ---
-title: Dependency Injection
+title: Bağımlılık Değiştirme
 anchor: dependency_injection
 ---
 
-## Bağımlılıkların Zerki {#dependency_injection_title}
+## Bağımlılık Değiştirme {#dependency_injection_title}
 
-From [Wikipedia](http://en.wikipedia.org/wiki/Dependency_injection):
+[Wikipedia](http://en.wikipedia.org/wiki/Dependency_injection)'da:
 
-> Dependency injection is a software design pattern that allows the removal of hard-coded dependencies and makes it
-> possible to change them, whether at run-time or compile-time.
+> Bağımlılık değiştirme kodlanmış bağımlılıkların çalışma veya derlenme anında kaldırılabilmesine ve değiştirilebilmesine izin veren 
+> bir yazılım tasarım desenidir.
 
-This quote makes the concept sound much more complicated than it actually is.
-Dependency Injection is providing a component with its dependencies either
-through constructor injection, method calls or the setting of properties. It
-is that simple.
+Bu açıklama konuyu olduğundan biraz daha karmaış gösteriyor olabilir.
+Bağımlılık değiştirme bir bileşenin bütün bağımlıklarının yaratılma anında (constructor aracılığıyla),
+metod kullanarak ya da özelliklere atama yaparak verilebilmesini sağlıyor. Böylece istenen anda bu bağımlıklar değiştirilebiliyor.
+Konu bu kadar basit aslında.
