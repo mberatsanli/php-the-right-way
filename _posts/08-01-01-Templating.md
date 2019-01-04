@@ -1,12 +1,12 @@
 ---
-title: Templating
+title: Arayüz Kalıpları (Templating)
 anchor: templating
 ---
 
-# Templating {#templating_title}
+# Arayüz Kalıpları {#templating_title}
 
-Template'ler sizin controller ve domain mantıklarınızı sunum katmanınızdan 
-ayrımanıza imkan sağlar. Template'ler genellikle uygulamanızın HMTL kısmıdır, 
-ama siz ayrıca XML gibi diğer formatlarıda kullanabilirsiniz. Template'ler 
+Arayüz kalıpları sizin controller ve domain mantıklarınızı sunum katmanınızdan 
+ayrımanıza imkan sağlar. Kalıplar genellikle uygulamanızın HMTL kısmıdır, 
+ama siz ayrıca XML gibi diğer formatları da kullanabilirsiniz. Kalıplar 
 genellikle [model–view–controller](pages/Design-Patterns.html#model-view-controller) (MVC) 
 yazılım mimarisinin ikinci parçası olan, "views" olarak da adlandırılır.
