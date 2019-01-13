@@ -23,7 +23,7 @@ Otomatikleştirmek isteyeceğiniz bazı işlemler:
 * Deployment
 
 
-### Otomasyon Araçlarını Hazırlamak
+### Otomasyon Araçlarını Hazırlamak {#otomasyon-aralarn-hazrlamak}
 
 Otomasyon araçları, yazılım deployment'larının yaygın görevlerini idare eden betik koleksiyonu olarak tanımlanabilir.
 Build araçları yazılımınızın bir parçası değildir, sadece yazılımınızla dışarıdan çalışır.
