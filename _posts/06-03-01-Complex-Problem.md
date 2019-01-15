@@ -4,10 +4,10 @@ isChild: true
 anchor: complex_problem
 ---
 
-## Complex Problem {#complex_problem_title}
+## Karmaşık Problemler {#complex_problem_title}
 
-If you have ever read about Dependency Injection then you have probably seen the terms *"Inversion of Control"* or *"Dependency Inversion Principle"*.
-These are the complex problems that Dependency Injection solves.
+Eğer daha önce Dependency Injection hakkında okuduysanız, *"Inversion of Control" (Kontrolün Ters Çevirilmesi)* ya da *"Dependency Inversion Principle" (Bağımlılığın Ters Çevirilmesi İlkesi)* kavramlarını duymuş olmalısınız.
+Bunlar Dependency Injection ile çözülmeye çalışılan sorunlardır.
 
 ### Inversion of Control
 
