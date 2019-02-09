@@ -11,8 +11,8 @@ Bunlar Dependency Injection ile çözülmeye çalışılan sorunlardır.
 
 ### Inversion of Control
 
-Inversion of Control is as it says, "inverting the control" of a system by keeping organisational control entirely separate from our objects.
-In terms of Dependency Injection, this means loosening our dependencies by controlling and instantiating them elsewhere in the system.
+“Kontrolün Tersine Çevirilmesi” kelime anlamında olduğu gibi, yapısal kontrolü nesnelerimizden tamamen ayrı tutarak sistemin kontrolünü tersine çevirmektir.
+Dependency Injection açısından bakarsak, bu başka bir yerde yöneterek ya da oluşturarak bağımlılıkların bitirilmesi anlamına gelir.
 
 For years, PHP frameworks have been achieving Inversion of Control, however, the question became, which part of control
 are you inverting, and where to? For example, MVC frameworks would generally provide a super object or base controller that other
