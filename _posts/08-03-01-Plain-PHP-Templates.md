@@ -6,11 +6,11 @@ anchor: yalin_php_sablonlari
 
 ## Yalın PHP Şablonları {#yalin_php_sablonlari_title}
 
-Yalın PHP şablonları düz PHp kodlarını kullanan basit şablonlardır. Bu doğan bir seçimdir çünkü PHP'nin kendisi 
+Yalın PHP şablonları düz PHP kodlarını kullanan basit şablonlardır. Bu doğal bir seçimdir çünkü PHP'nin kendisi 
 aslında bir şablon dilidir. Bunun anlamı siz PHP dilini rahatça HTML gibi dillerin arasında kullanabilirsiniz.
-Bu PHP geliştiricileri başka yeni bir dil öğrenmeden, bildilkleri fonksiyonları kullanarak ve hatta kullandıkları
-editörlerinin renklendirme seçeneklerini bile değiştirmeden kullanabilmeleri için yaralı olabilir. Dahası, düz 
-PHP şablonları tekrar derlenen şablon yöntemlerine göre derlenme aşaması olmadığından daha hızlı çalışacaktır.
+Bu PHP geliştiricilerinin yararınadır çünkü başka yeni bir dil öğrenmelerine gerek yoktur, bildikleri fonksiyonları kullanabilirler ve hatta kullandıkları
+editörlerinin renklendirme seçeneklerini bile değiştirmeden kullanabilirler. Dahası, düz 
+PHP şablonları tekrar derlenen şablon yöntemlerine göre derlenme aşaması olmadığından daha da hızlı çalışacaktır.
 
 Her modern PHP framework yapısı bir çeşit şablon sistemi kullanmaktadır, bir çoğuda varsayılan olarak düz PHP 
 kullanır. Framework'ler dışında [Plates](http://platesphp.com/) veya [Aura.View](https://github.com/auraphp/Aura.View)
