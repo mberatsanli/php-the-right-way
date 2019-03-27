@@ -12,7 +12,7 @@ anchor: test_odakli_gelistirme
 > geliştirici bir özelliği ya da fonksiyonu tanımlayan (başlangıçta başarısız) bir test oluşturur, sonra testi geçmek için 
 > az sayıda kodlar eklenir ya da çıkarılır ve sonunda yazılımın işlevini ve davranışını değiştirmeden iç yapısında yapılan değişikliklerle 
 > yeni kod kabul edilir standartlara uygun bir hale getirilir. Kent Beck, TOG tekniğini keşfeden ve geliştiren olarak kabul edilen kişi,
-> 2003 yılında TOG'un basit tasarımı ve özgüveni ortaya çıkarığını belirti.
+> 2003 yılında TOG'un basit tasarımı ve özgüveni teşvik ettiğini belirti.
 
 Uygulamanız için kullanabileceğiniz bir kaç çeşit test yöntemi vardır:
 
