@@ -8,7 +8,11 @@ anchor: test_odakli_gelistirme
 
 [Wikipedia](http://en.wikipedia.org/wiki/Test-driven_development)'den:
 
-Test odaklı geliştirme (TOG) geliştirme döngüsünün küçük bir kısmının tekrarına dayana bir yazılım geliştirme sürecidir: ilk olarak geliştirici istenen bir özelliği ya da fonksiyonu tanımlayan (başlangıçta başarısız) bir test durumunu oluşturur, sonra testi geçmek için az sayıda kodlar eklenir ya da çıkarılır ve sonunda yazılımın işlevini ve davranışını değiştirmeden iç yapısında yapılan değişikliklerle yeni kod kabul edilir standartlara uygun bir hale getirilir. _Kent Beck, who is credited with having developed or 'rediscovered' the technique, stated in 2003 that TDD encourages simple designs and inspires confidence_
+> Test odaklı geliştirme (TOG), geliştirme sürecinin döngüsel tekrarına dayana bir yazılım geliştirme sürecidir: ilk olarak 
+> geliştirici bir özelliği ya da fonksiyonu tanımlayan (başlangıçta başarısız) bir test oluşturur, sonra testi geçmek için 
+> az sayıda kodlar eklenir ya da çıkarılır ve sonunda yazılımın işlevini ve davranışını değiştirmeden iç yapısında yapılan değişikliklerle 
+> yeni kod kabul edilir standartlara uygun bir hale getirilir. Kent Beck, TOG tekniğini keşfeden ve geliştiren olarak kabul edilen kişi,
+> 2003 yılında TOG'un basit tasarımı ve özgüveni ortaya çıkarığını belirti.
 
 Uygulamanız için kullanabileceğiniz bir kaç çeşit test yöntemi vardır:
 
