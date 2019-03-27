@@ -6,7 +6,7 @@ anchor: derlenmis_sablonlar_template
 
 ## Derlenmiş Şablonlar(Template) {#derlenmis_sablonlar_template}
 
-PHP nesne odaklı bir dil olarak olgunlaşırken, aynı gelişimi şablon dili olma yolunca [gerçekleştiremedi](http://fabien.potencier.org/article/34/templating-engines-in-php).
+PHP nesne odaklı bir dil olarak olgunlaşırken, aynı gelişimi şablon dili olma yolunda [gerçekleştiremedi](http://fabien.potencier.org/article/34/templating-engines-in-php).
 [Twig](http://twig.sensiolabs.org/) veya [Smarty](http://www.smarty.net/) gibi derlenen şablonlama sistemleri, 
 bu boşluğu farklı dizimleri ile doldurmaya çalışıyorlar. Otomatik sızıntıları önleme, basit kontrol yapıları
 ve kalıtım özellikleri ile derlenebilen şablon sistemleri kolay kod yazmanın yanında temiz, okunabilir ve daha güvenli 
